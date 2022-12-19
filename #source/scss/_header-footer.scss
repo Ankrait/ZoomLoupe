@@ -62,6 +62,9 @@
 
 .footer {
     margin: 200px 0 0 0;
+    @media screen and (max-width: 1023.89px) {
+        margin: 150px 0 0 0;
+    }
 
     & a {
         color: #fcfcfc;

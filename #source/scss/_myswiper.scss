@@ -1,5 +1,6 @@
+
 .picklocks__collaider {
-    flex: 0 0 50%;
+    width: 50%;
 
     & img {
         width: 100%;
@@ -16,16 +17,27 @@
         z-index: 2;
     }
 }
+.swiper {
+    max-width: 70%;
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
+}
 .swiper-wrapper {
+    width: 100%;
 }
 .swiper-body {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .swiper-slide {
+    width: 100%;
 }
 .swiper__arr-left,
 .swiper__arr-right {
+    margin: 0 -20px 0 -20px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -74,4 +86,57 @@
     background: linear-gradient(359.28deg, rgba(95, 168, 255, 0.4) 6.14%, rgba(95, 168, 255, 0.068) 101.75%);
     filter: blur(7.5px);
     z-index: 1;
+}
+
+@media screen and (max-width: 767.89px) {
+    .picklocks__collaider--body {
+        max-width: 235px;
+    }
+    .swiper__arr-left,
+    .swiper__arr-right {
+        margin: 0 -10px 0 -10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .arr-right,
+    .arr-left {
+        width: 16px;
+        height: 12px;
+        position: relative;
+
+        &:first-child {
+            margin-right: -3x;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 3px;
+            border-radius: 5px;
+            background: #5fa8ff;
+            top: 0;
+            transform: rotate(-45deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 3px;
+            border-radius: 5px;
+            background: #5fa8ff;
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+        transition: border 0.6s ease 0s, transform 0.6s ease 0s;
+    }
+    .back {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .picklocks__collaider--body {
+        max-width: max(60vw, 230px);
+    }
 }

@@ -13,6 +13,7 @@
 
 <body>
    <div class="wrapper">
+      <img class="full-bg" src="img/Bg_Lines.svg" alt="">
       <header class="header">
          <div class="header__bg_1"></div>
          <div class="header__container">
@@ -169,9 +170,9 @@
             </div>
          </div>
          <div class="email">
-            <img class="blur _1" src="img/mainpage_blurs/EllipseEmail1.svg" alt="Блюр">
-            <img class="blur _2" src="img/mainpage_blurs/EllipseEmail2.svg" alt="Блюр">
             <div class="email__container">
+               <img class="blur _1" src="img/mainpage_blurs/EllipseEmail1.svg" alt="Блюр">
+               <img class="blur _2" src="img/mainpage_blurs/EllipseEmail2.svg" alt="Блюр">
                <div class="email__block">
                   <div class="email__content">
                      <div class="email__title title-grad">
@@ -221,8 +222,8 @@
             </div>
          </div>
          <div class="phone">
-            <img class="blur" src="img/mainpage_blurs/EllipsePhone.svg" alt="">
             <div class="phone__container">
+               <img class="blur" src="img/mainpage_blurs/EllipsePhone.svg" alt="">
                <div class="phone__block">
                   <div class="phone__content">
                      <div class="phone__content--block">
@@ -306,7 +307,6 @@
             </div>
          </div>
          <div class="awards">
-            <div class="awards__name title-grad">Получай награды</div>
             <div class="awards__container">
                <img class="bg _1" src="img/awards.svg" alt="бг">
                <img class="bg _2" src="img/awards.svg" alt="бг">
@@ -314,6 +314,8 @@
                <img class="blur _2" src="img/mainpage_blurs/EllipseAwards2.svg" alt="Блюр">
                <img class="blur _3" src="img/mainpage_blurs/EllipseAwards3.svg" alt="Блюр">
                <img class="blur _4" src="img/mainpage_blurs/EllipseAwards4.svg" alt="Блюр">
+               <img class="blur _phone" src="img/mainpage_blurs/EllipseAwardsPhone.svg" alt="Блюр">
+               <div class="awards__name title-grad">Получай награды</div>
                <div class="awards__content">
                   <div class="awards__item">
                      <div class="awards__image">
@@ -361,8 +363,74 @@
                      </div>
                      <div class="awards__title">Предметы для игры </div>
                      <div class="awards__info">
-                        Они помогут быстрее находитьсокровища в Zoom Loupe.</div>
+                        Они помогут быстрее находить сокровища в Zoom Loupe.</div>
                   </div>
+               </div>
+               <div class="awards__swiper">
+                  <div class="swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="awards__image">
+                              <img class="blur" src="img/awards/Ellipse1.svg" alt="Блюр">
+                              <img src="img/awards/awards1.png" alt="Приз">
+                           </div>
+                           <div class="awards__text">
+                              <div class="awards__title">MITICOIN</div>
+                              <div class="awards__info">
+                                 Уникальная криптовалюта с&nbsp;механизмом стабильно-постоянного роста курса.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="awards__image">
+                              <img class="blur" src="img/awards/Ellipse1.svg" alt="Блюр">
+                              <img src="img/awards/awards2.png" alt="Приз">
+                           </div>
+                           <div class="awards__text">
+                              <div class="awards__title">USDT</div>
+                              <div class="awards__info">
+                                 Самый популярный стейбл коин, который обеспечивается запасами долларов США.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="awards__image">
+                              <img class="blur" src="img/awards/Ellipse1.svg" alt="Блюр">
+                              <img src="img/awards/awards3.png" alt="Приз">
+                           </div>
+                           <div class="awards__text">
+                              <div class="awards__title">Бонусы от партнеров</div>
+                              <div class="awards__info">
+                                 Различные бонусы от&nbsp;наших партнеров.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="awards__image">
+                              <img class="blur" src="img/awards/Ellipse2.svg" alt="Блюр">
+                              <img src="img/awards/awards4.png" alt="Приз">
+                           </div>
+                           <div class="awards__text">
+                              <div class="awards__title">NFT-Australia</div>
+                              <div class="awards__info">
+                                 Это NFT Miti-Coin, которые выдаются игрокам.</div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="awards__image">
+                              <img class="blur" src="img/awards/Ellipse3.svg" alt="Блюр">
+                              <img class="smoke" src="img/awards/smoke.png" alt="Блюр">
+                              <img src="img/awards/awards5.png" alt="Приз">
+                           </div>
+                           <div class="awards__text">
+                              <div class="awards__title">Предметы для игры </div>
+                              <div class="awards__info">
+                                 Они помогут быстрее находить сокровища в Zoom Loupe.</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
                </div>
             </div>
          </div>
@@ -374,17 +442,23 @@
                <div class="equipments__text">
                   Есть различные виды экипировки
                </div>
-               <ul class="equipments__menu">
-                  <li class="equipments__menu--item">Модуль навигатора</li>
-                  <li class="equipments__menu--item">Шапка</li>
-                  <li class="equipments__menu--item _active">Очки</li>
-                  <li class="equipments__menu--item">Цепочка</li>
-                  <li class="equipments__menu--item">Куртка</li>
-                  <li class="equipments__menu--item">Перчатки</li>
-                  <li class="equipments__menu--item">Браслет</li>
-                  <li class="equipments__menu--item">Штаны</li>
-                  <li class="equipments__menu--item">Обувь</li>
-               </ul>
+               <div class="equipments__menu--body">
+                  <div class="equipments__select select-equipments">
+                     <span class="select-equipments__chose">Очки</span>
+                     <span class="select-equipments__arr"></span>
+                  </div>
+                  <ul class="equipments__menu">
+                     <li class="equipments__menu--item">Модуль навигатора</li>
+                     <li class="equipments__menu--item">Шапка</li>
+                     <li class="equipments__menu--item _active">Очки</li>
+                     <li class="equipments__menu--item">Цепочка</li>
+                     <li class="equipments__menu--item">Куртка</li>
+                     <li class="equipments__menu--item">Перчатки</li>
+                     <li class="equipments__menu--item">Браслет</li>
+                     <li class="equipments__menu--item">Штаны</li>
+                     <li class="equipments__menu--item">Обувь</li>
+                  </ul>
+               </div>
                <div class="equipments__information information">
                   <div class="information__block">
                      <div class="information__about">
@@ -440,39 +514,41 @@
                <img class="blur _6" src="img/mainpage_blurs/EllipseHelpus6.svg" alt="Блюр">
                <img class="bg _1" src="img/mainpage_blurs/bgHelpus1.svg" alt="Блюр">
                <img class="bg _2" src="img/mainpage_blurs/bgHelpus2.svg" alt="Блюр">
-               <div class="helpus__content">
-                  <div class="helpus__txt">
-                     Помоги нам и получи за это бонусы
-                  </div>
-                  <div class="helpus__title title-grad">
-                     Стань исследователем
-                     <img class="blur _5" src="img/mainpage_blurs/EllipseHelpus5.svg" alt="Блюр">
-                  </div>
-                  <div class="helpus__info">
-                     У тебя будет возможность...<br>
-                     За это ты будешь получать...<br>
-                     И еще какое-то описание<br>
-                  </div>
-                  <div class="helpus__coins">
-                     <div class="helpus__mc">
-                        <span>MITICOIN</span>
-                        <div class="helpus__line"></div>
-                        <img src="img/awards/awards1.png" alt="Коин">
+               <div class="helpus__block">
+                  <div class="helpus__content">
+                     <div class="helpus__txt">
+                        Помоги нам и получи за это бонусы
                      </div>
-                     <div class="helpus__nfta">
-                        <span>NFT-A</span>
-                        <div class="helpus__line"></div>
-                        <img src="img/awards/awards4.png" alt="NFT">
+                     <div class="helpus__title title-grad">
+                        Стань исследователем
+                        <img class="blur _5" src="img/mainpage_blurs/EllipseHelpus5.svg" alt="Блюр">
                      </div>
+                     <div class="helpus__info">
+                        У тебя будет возможность...<br>
+                        За это ты будешь получать...<br>
+                        И еще какое-то описание<br>
+                     </div>
+                     <div class="helpus__coins">
+                        <div class="helpus__mc">
+                           <span>MITICOIN</span>
+                           <div class="helpus__line"></div>
+                           <img src="img/awards/awards1.png" alt="Коин">
+                        </div>
+                        <div class="helpus__nfta">
+                           <span>NFT-A</span>
+                           <div class="helpus__line"></div>
+                           <img src="img/awards/awards4.png" alt="NFT">
+                        </div>
+                     </div>
+                     <div class="helpus__btn btn">Подробнее</div>
                   </div>
-                  <div class="helpus__btn btn">Подробнее</div>
-               </div>
-               <div class="helpus__image">
-                  <img class="main-img" src="img/helpus.png" alt="Человек">
-                  <img class="blur _1" src="img/mainpage_blurs/EllipseHelpus1.svg" alt="Блюр">
-                  <img class="blur _2" src="img/mainpage_blurs/EllipseHelpus2.svg" alt="Блюр">
-                  <img class="blur _3" src="img/mainpage_blurs/EllipseHelpus3.svg" alt="Блюр">
-                  <img class="blur _4" src="img/mainpage_blurs/EllipseHelpus4.svg" alt="Блюр">
+                  <div class="helpus__image">
+                     <img class="main-img" src="img/helpus.png" alt="Человек">
+                     <img class="blur _1" src="img/mainpage_blurs/EllipseHelpus1.svg" alt="Блюр">
+                     <img class="blur _2" src="img/mainpage_blurs/EllipseHelpus2.svg" alt="Блюр">
+                     <img class="blur _3" src="img/mainpage_blurs/EllipseHelpus3.svg" alt="Блюр">
+                     <img class="blur _4" src="img/mainpage_blurs/EllipseHelpus4.svg" alt="Блюр">
+                  </div>
                </div>
             </div>
          </div>
