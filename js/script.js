@@ -22,14 +22,10 @@ new Swiper('.picklocks .swiper', {
     },
 
     freeMode: false,
-    loop: true,
+    loop: false,
     allowTouchMove: true,
 
-    autoplay: {
-        delay: 5000,
-        speed: 1000,
-        disableOnInteraction: false,
-    },
+    autoplay: false,
     breakpoints: {
         768: {
             speed: 1000,
