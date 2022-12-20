@@ -9,9 +9,20 @@
    <link rel="stylesheet" href="css/swiper-bundle.css">
    <link rel="stylesheet" href="css/style.css">
    <script src="js/jquery.js"></script>
+   <script src="js/preloader.js"></script>
 </head>
 
-<body>
+<body class="overflow--hide">
+   <div class="preloader" id="preloader">
+      <img src="img/pre.png" alt="">
+      <svg class="progress-ring" width="488" height="488">
+         <circle class="progress-ring__circle" stroke="white" stroke-width="3" fill="transparent" r="241" cx="244"
+            cy="244" />
+      </svg>
+      <span class="preloader__procents">
+         <span class="procents">0</span>%
+      </span>
+   </div>
    <div class="wrapper">
       <img class="full-bg" src="img/Bg_Lines.svg" alt="">
       <header class="header">
@@ -67,10 +78,10 @@
                   и&nbsp;собирать
                   разбросанные вокруг тебя настоящие деньги.
                </div>
-               <div class="mainpage__btn _1 btn">
+               <div class="mainpage__btn _1 btn er_404">
                   Marketplace
                </div>
-               <div class="mainpage__btn _2 btn">
+               <div class="mainpage__btn _2 btn er_404">
                   Whitepaper
                </div>
             </div>
@@ -199,11 +210,12 @@
             <div class="miticoin__container">
                <div class="miticoin__video">
                   <div class="miticoin__video--block">
-                     <video src="video/coin.mp4" playsinline loop autoplay muted preload="auto"></video>
+                     <video src="video/coin.mp4" autoplay="autoplay" loop="loop" muted defaultMuted playsinline
+                        oncontextmenu="return false;" preload="auto" controlsList="nodownload"></video>
                      <img src="img/col-down.png" alt="Низ коллайдера">
 
                      <img class="blur" src="img/miticoin_blur.svg" alt="Блюр">
-                     
+
                      <span class="bg"></span>
                      <!-- <img class="blur" src="img/miticoin_blur2.svg" alt="Блюр"> -->
                   </div>
@@ -219,7 +231,7 @@
                      бесконечно
                      растущей капитализации.
                   </div>
-                  <div class="miticoin__btn btn">Подробнее</div>
+                  <div class="miticoin__btn btn er_404">Подробнее</div>
                </div>
             </div>
          </div>
@@ -302,7 +314,7 @@
                      Для взлома сундука вам нужны отмычки.<br> Их можно купить в&nbsp;магазине или найти в&nbsp;открытом
                      сундуке.
                   </div>
-                  <div class="picklocks__btn btn">
+                  <div class="picklocks__btn btn er_404">
                      Купить
                   </div>
                </div>
@@ -452,17 +464,18 @@
                   <ul class="equipments__menu">
                      <li class="equipments__menu--item">Модуль навигатора</li>
                      <li class="equipments__menu--item">Шапка</li>
-                     <li class="equipments__menu--item _active">Очки</li>
+                     <li class="equipments__menu--item _active" id="glasses">Очки</li>
                      <li class="equipments__menu--item">Цепочка</li>
-                     <li class="equipments__menu--item">Куртка</li>
-                     <li class="equipments__menu--item">Перчатки</li>
+                     <li class="equipments__menu--item" id="top">Куртка</li>
+                     <li class="equipments__menu--item" id="gloves">Перчатки</li>
                      <li class="equipments__menu--item">Браслет</li>
-                     <li class="equipments__menu--item">Штаны</li>
-                     <li class="equipments__menu--item">Обувь</li>
+                     <li class="equipments__menu--item" id="pants">Штаны</li>
+                     <li class="equipments__menu--item" id="boots">Обувь</li>
                   </ul>
                </div>
                <div class="equipments__information information">
-                  <div class="information__block">
+                  <img class="blur" src="img/mainpage_blurs/EllipseEquip.svg" alt="Блюр">
+                  <div class="information__block glasses main _active">
                      <div class="information__about">
                         <div class="information__name">
                            Очки повышают характеристику “удача”
@@ -475,7 +488,6 @@
                         </div>
                      </div>
                      <div class="information__details">
-                        <img class="blur" src="img/mainpage_blurs/EllipseEquip.svg" alt="Блюр">
                         <div class="information__item">
                            <div class="information__text">
                               <div class="information__lvl">Очки 1 уровня</div>
@@ -504,6 +516,186 @@
                            <div class="information__line"></div>
                            <div class="information__image">
                               <img src="img/equip/glasses3.png" alt="Очки">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="information__block boots">
+                     <div class="information__about">
+                        <div class="information__name">
+                           Обувь - повышает характеристику “очки опыта”
+                        </div>
+                        <div class="information__line1">
+
+                        </div>
+                        <div class="information__info">
+                           С помощью этого то-то-то.<br>Удача нужна для того-то того-то того-то.
+                        </div>
+                     </div>
+                     <div class="information__details">
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Обувь 1 уровня</div>
+                              <div class="information__boost">Дает <span>100</span> едениц опыта</div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/boots1.png" alt="Обувь">
+                           </div>
+                        </div>
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Обувь 2 уровня</div>
+                              <div class="information__boost">Дает <span>150</span> едениц опыта</div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/boots2.png" alt="Обувь">
+                           </div>
+                        </div>
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Обувь 3 уровня</div>
+                              <div class="information__boost">Дает <span>200</span> едениц опыта</div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/boots3.png" alt="Обувь">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="information__block top">
+                     <div class="information__about">
+                        <div class="information__name">
+                           Куртка - повышает характеристику “очки опыта”
+                        </div>
+                        <div class="information__line1">
+
+                        </div>
+                        <div class="information__info">
+                           С помощью этого то-то-то.<br>Удача нужна для того-то того-то того-то.
+                        </div>
+                     </div>
+                     <div class="information__details">
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Куртка 1 уровня</div>
+                              <div class="information__boost">Дает <span>150</span> едениц опыта</div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/top1.png" alt="Очки">
+                           </div>
+                        </div>
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Куртка 2 уровня</div>
+                              <div class="information__boost">Дает <span>300</span> едениц опыта</div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/top2.png" alt="Очки">
+                           </div>
+                        </div>
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Куртка 3 уровня</div>
+                              <div class="information__boost">Дает <span>600</span> едениц опыта</div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/top3.png" alt="Очки">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="information__block pants">
+                     <div class="information__about">
+                        <div class="information__name">
+                           Штаны - повышают характеристику “очки опыта”.
+                        </div>
+                        <div class="information__line1">
+
+                        </div>
+                        <div class="information__info">
+                           С помощью этого то-то-то.<br>Удача нужна для того-то того-то того-то.
+                        </div>
+                     </div>
+                     <div class="information__details">
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Штаны 1 уровня</div>
+                              <div class="information__boost">Дает <span>100</span> едениц опыта</div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/pants1.png" alt="Очки">
+                           </div>
+                        </div>
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Штаны 2 уровня</div>
+                              <div class="information__boost">Дает <span>200</span> едениц опыта</div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/pants2.png" alt="Очки">
+                           </div>
+                        </div>
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Штаны 3 уровня</div>
+                              <div class="information__boost">Дает <span>400</span> едениц опыта</div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/pants3.png" alt="Очки">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="information__block gloves">
+                     <div class="information__about">
+                        <div class="information__name">
+                           Штаны - повышают характеристику “очки опыта”.
+                        </div>
+                        <div class="information__line1">
+
+                        </div>
+                        <div class="information__info">
+                           С помощью этого то-то-то.<br>Удача нужна для того-то того-то того-то.
+                        </div>
+                     </div>
+                     <div class="information__details">
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Перчатки 1 уровня</div>
+                              <div class="information__boost">Увеличивает удачу на <span>3%</span></div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/gloves1.png" alt="Очки">
+                           </div>
+                        </div>
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Перчатки 2 уровня</div>
+                              <div class="information__boost">Увеличивает удачу на <span>7%</span></div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/gloves2.png" alt="Очки">
+                           </div>
+                        </div>
+                        <div class="information__item">
+                           <div class="information__text">
+                              <div class="information__lvl">Перчатки 3 уровня</div>
+                              <div class="information__boost">Увеличивает удачу на <span>10%</span></div>
+                           </div>
+                           <div class="information__line"></div>
+                           <div class="information__image">
+                              <img src="img/equip/gloves3.png" alt="Очки">
                            </div>
                         </div>
                      </div>
@@ -543,7 +735,7 @@
                            <img src="img/awards/awards4.png" alt="NFT">
                         </div>
                      </div>
-                     <div class="helpus__btn btn">Подробнее</div>
+                     <div class="helpus__btn btn er_404">Подробнее</div>
                   </div>
                   <div class="helpus__image">
                      <img class="main-img" src="img/helpus.png" alt="Человек">
@@ -565,10 +757,10 @@
                Zoom Loupe
             </div>
             <div class="footer__share">
-               <div class="footer__share--item"> <img src="img/twitter.svg" alt="Твиттер"></div>
-               <div class="footer__share--item"><img src="img/tg.svg" alt="Телеграм"></div>
-               <div class="footer__share--item"> <img src="img/insta.svg" alt="Инстаграм"></div>
-               <div class="footer__share--item"><img src="img/ds.svg" alt="Дискорд"></div>
+               <div class="footer__share--item er_404"><img src="img/twitter.svg" alt="Твиттер"></div>
+               <div class="footer__share--item er_404"><img src="img/tg.svg" alt="Телеграм"></div>
+               <div class="footer__share--item er_404"><img src="img/insta.svg" alt="Инстаграм"></div>
+               <div class="footer__share--item er_404"><img src="img/ds.svg" alt="Дискорд"></div>
             </div>
             <a href="mailto:info@titimiti.com" class="footer__email">
                info@titimiti.com
@@ -583,6 +775,45 @@
             </div>
          </div>
       </footer>
+   </div>
+
+   <div class="popup popup404">
+      <div class="popup__body">
+         <div class="popup__content">
+            <div class="popup__UFO">
+               <img class="UFO" src="img/UFO-1.svg" alt="">
+               <img class="blur" src="img/UFO-2.svg" alt="">
+            </div>
+            <h1 class="__name">404</h1>
+            <p>Страница еще в разработке</p>
+            <div class="popup__close-btn btn">
+               <div class="grad"></div>
+               Закрыть
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="popup email-accept">
+      <div class="popup__body">
+         <div class="popup__content">
+            <img class="" src="img/accept.svg" alt="">
+            <p>Вы успешно подписались<br>на рассылку</p>
+            <div class="popup__close-btn btn">
+               <div class="grad"></div>
+               Закрыть
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="cookie cookie--hide">
+      <img src="img/cookie.png" alt="">
+      <p class="cookie__text">Этот сайт использует cookies, хоть мы и не пекарня</p>
+      <div class="cookie__btn">
+         <div class="grad"></div>
+         Хорошо
+      </div>
    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
