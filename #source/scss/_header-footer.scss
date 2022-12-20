@@ -194,8 +194,8 @@
     display: block;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: 0.4s ease all;
-    transition: 0.4s ease all;
+    -webkit-transition: 0.4s ease transform;
+    transition: 0.4s ease transform;
 
     border-radius: 8px;
     height: 2px;
@@ -237,7 +237,7 @@
                 position: absolute;
                 width: 100%;
                 z-index: -1;
-                transition: all 0.6s ease 0s;
+                transition: opacity 0.6s ease 0s;
                 height: 100vh;
                 top: 0;
                 left: 0;
@@ -330,7 +330,7 @@
             visibility: visible;
         }
         & .header__bg_2 {
-            transition: all 0.6s ease 0s;
+            transition: opacity 0.6s ease 0s;
         }
     }
 }
