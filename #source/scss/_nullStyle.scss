@@ -117,6 +117,7 @@ ul li {
 }
 img {
    vertical-align: top;
+   pointer-events: none;
 }
 h1,
 h2,
@@ -175,18 +176,35 @@ body.overflow--hide {
    padding: 13px 60px;
 
    background: linear-gradient(96.12deg, #00cf8c 7.03%, #008ed7 114.13%);
-   box-shadow: 0px 0px 10px #00b8a5;
+   box-shadow: inset 0px 0px 0 0 #008ed7, 0px 0px 10px #00b8a5;
    border-radius: 100px;
 
    font-weight: 600;
    font-size: 16px;
    line-height: 140%;
    color: #0a0c0d;
+   transition: all 0.7s ease;
+
+   &:hover {
+      box-shadow: inset 0px 0px 80px -30px #008ed7, 0px 0px 10px #00b8a5;
+   }
+
+   @media screen and (max-width: 767.89px) {
+      &:hover {
+         box-shadow: none;
+      }
+      &:active {
+         transition: all 0.2s ease;
+         box-shadow: inset 0px 0px 80px -30px #008ed7, 0px 0px 10px #00b8a5;
+      }
+   }
+
    @media screen and(max-width:600px) {
       max-width: 343px;
       width: 100%;
    }
 }
+
 .title-grad {
    font-weight: 700;
    font-size: 46px;

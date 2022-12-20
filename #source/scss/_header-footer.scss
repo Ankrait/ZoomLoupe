@@ -46,6 +46,7 @@
         font-weight: 500;
         font-size: 15px;
         line-height: 130%;
+        white-space: nowrap;
 
         text-transform: uppercase;
 
@@ -341,13 +342,24 @@
         }
     }
     .logo {
+        & img {
+            width: 35px;
+        }
         &__text {
-            display: none;
+            font-size: 18px;
         }
     }
     .menu {
         &__list {
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .logo {
+        &__text {
+            display: none;
         }
     }
 }
