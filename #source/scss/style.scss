@@ -1831,7 +1831,7 @@
    .email {
       &__block {
          padding: 60px 15px;
-         background: linear-gradient(0deg, rgba(1, 5, 12, 0.8), rgba(1, 5, 12, 0.8)), url(../../img/bg_street.png);
+         background: linear-gradient(0deg, rgba(1, 5, 12, 0.8), rgba(1, 5, 12, 0.8)), url(../img/bg_street.png) no-repeat;
          background-position-x: 40%;
 
          border-radius: 20px;
@@ -2008,3 +2008,7 @@
 }
 
 @import "_animation";
+
+.blur {
+   display: none;
+}
