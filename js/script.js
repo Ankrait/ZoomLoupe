@@ -11,7 +11,7 @@ $('.equipments__menu--item').click(function () {
 ///
 ///
 //////////////////////// Свайпер ////////////////////////
-swiper = new Swiper('.picklocks .swiper', {
+new Swiper('.picklocks .swiper', {
     // pagination: {
     //     el: '.titiland .swiper-pagination',
     //     clickable: true,
@@ -37,7 +37,7 @@ swiper = new Swiper('.picklocks .swiper', {
     }
 });
 
-swiper2 = new Swiper('.awards .swiper', {
+new Swiper('.awards .swiper', {
     pagination: {
         el: '.awards .swiper-pagination',
         clickable: true,
