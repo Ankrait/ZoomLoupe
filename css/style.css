@@ -146,7 +146,6 @@ p {
 }
 @media screen and (max-width: 424.89px) {
   [class*=__container] {
-    max-width: 345px;
     padding: 0 15px;
   }
 }

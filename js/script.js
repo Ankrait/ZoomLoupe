@@ -377,4 +377,3 @@ if (cookiecook != "no" || cookiecook == null) {
     document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();
 }
 ///////////////////// Убрать куки /////////////////////
-
