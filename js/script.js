@@ -142,18 +142,18 @@ function Paralaks(e) {
 ///
 ///
 ///////////////////// Тык по логу = скролл на верх сайта /////////////////////
-let logo = document.querySelector('.logo')
-logo.addEventListener('click', () => {
-    let scroll_to = $('body').offset().top;
-    if ($('html, body').is(':animated'))
-        return;
-    if (window.scrollY == scroll_to)
-        return;
+// let logo = document.querySelector('.logo')
+// logo.addEventListener('click', () => {
+//     let scroll_to = $('body').offset().top;
+//     if ($('html, body').is(':animated'))
+//         return;
+//     if (window.scrollY == scroll_to)
+//         return;
 
-    $('html, body').animate({
-        scrollTop: scroll_to
-    }, 1000);
-});
+//     $('html, body').animate({
+//         scrollTop: scroll_to
+//     }, 1000);
+// });
 ///////////////////// Тык по логу = скролл на верх сайта /////////////////////
 ///
 ///
@@ -314,13 +314,13 @@ form_btn.addEventListener('click', (e) => {
     else {
         e.preventDefault();
         email.classList.add("error");
-        $('.form__item span').addClass("error");
+        // $('.form__item span').addClass("error");
     }
 });
 
 email.addEventListener('focus', () => {
     email.classList.remove("error");
-    $('.form__item span').removeClass("error");
+    // $('.form__item span').removeClass("error");
 });
 ///////////////////// отправление почты /////////////////////
 ///
