@@ -121,39 +121,39 @@ $(".equipments__menu--item").click((e) => {
 ///
 ///
 //////////////////////// Паралакс луны и коллайдера ////////////////////////
-const bg_lines = document.querySelector('.full-bg')
-const collider_images = document.querySelectorAll('.swiper img')
+// const bg_lines = document.querySelector('.full-bg')
+// const collider_images = document.querySelectorAll('.swiper img')
 
-document.addEventListener('mousemove', Paralaks)
+// document.addEventListener('mousemove', Paralaks)
 
-function Paralaks(e) {
-    if (window.matchMedia('screen and (min-width: 780px)').matches) {
-        let offsetX = (e.clientX / window.innerWidth * 12) - 6;
-        let offsetY = (e.clientY / window.innerHeight * 12) - 6;
-        collider_images.forEach((item) => {
-            item.setAttribute("style", "transform: translate(" + offsetX + "px, " + offsetY + "px);");
-        });
+// function Paralaks(e) {
+//     if (window.matchMedia('screen and (min-width: 780px)').matches) {
+//         let offsetX = (e.clientX / window.innerWidth * 12) - 6;
+//         let offsetY = (e.clientY / window.innerHeight * 12) - 6;
+//         collider_images.forEach((item) => {
+//             item.setAttribute("style", "transform: translate(" + offsetX + "px, " + offsetY + "px);");
+//         });
 
-        bg_lines.setAttribute("style", "transform: translate(" + -offsetX + "px, " + -offsetY + "px);");
-    }
-}
+//         bg_lines.setAttribute("style", "transform: translate(" + -offsetX + "px, " + -offsetY + "px);");
+//     }
+// }
 //////////////////////// Паралакс луны и коллайдера ////////////////////////
 ///
 ///
 ///
 ///////////////////// Тык по логу = скролл на верх сайта /////////////////////
-let logo = document.querySelector('.logo')
-logo.addEventListener('click', () => {
-    let scroll_to = $('body').offset().top;
-    if ($('html, body').is(':animated'))
-        return;
-    if (window.scrollY == scroll_to)
-        return;
+// let logo = document.querySelector('.logo')
+// logo.addEventListener('click', () => {
+//     let scroll_to = $('body').offset().top;
+//     if ($('html, body').is(':animated'))
+//         return;
+//     if (window.scrollY == scroll_to)
+//         return;
 
-    $('html, body').animate({
-        scrollTop: scroll_to
-    }, 1000);
-});
+//     $('html, body').animate({
+//         scrollTop: scroll_to
+//     }, 1000);
+// });
 ///////////////////// Тык по логу = скролл на верх сайта /////////////////////
 ///
 ///
