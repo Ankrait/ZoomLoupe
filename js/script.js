@@ -56,49 +56,49 @@ new Swiper('.awards .swiper', {
 ///
 ///
 //////////////////////// Бургер ////////////////////////
-let toggle = document.querySelector('.burger');
-let header = document.querySelector('.header');
-let body = document.body;
+// let toggle = document.querySelector('.burger');
+// let header = document.querySelector('.header');
+// let body = document.body;
 
-toggle.addEventListener('click', function (e) {
-    this.classList.toggle('opened');
-    header.classList.toggle('opened');
-    body.classList.toggle('overflow--hide');
-});
-//////////////////////// Бургер ////////////////////////
-///
-///
-///
-//////////////////////// Перетащить блок ////////////////////////
-window.addEventListener('resize', btnRemove);
-function btnRemove() {
-    if (window.matchMedia('screen and (max-width: 600px)').matches)
-        $(".picklocks__btn").appendTo(".picklocks__container");
-    else
-        $(".picklocks__btn").appendTo(".picklocks__content");
+// toggle.addEventListener('click', function (e) {
+//     this.classList.toggle('opened');
+//     header.classList.toggle('opened');
+//     body.classList.toggle('overflow--hide');
+// });
+// //////////////////////// Бургер ////////////////////////
+// ///
+// ///
+// ///
+// //////////////////////// Перетащить блок ////////////////////////
+// window.addEventListener('resize', btnRemove);
+// function btnRemove() {
+//     if (window.matchMedia('screen and (max-width: 600px)').matches)
+//         $(".picklocks__btn").appendTo(".picklocks__container");
+//     else
+//         $(".picklocks__btn").appendTo(".picklocks__content");
 
-}
-btnRemove()
+// }
+// btnRemove()
 
-window.addEventListener('resize', btnRemove2);
-function btnRemove2() {
-    if (window.matchMedia('screen and (max-width: 600px)').matches)
-        $(".miticoin__btn").appendTo(".miticoin__container");
-    else
-        $(".miticoin__btn").appendTo(".miticoin__content");
+// window.addEventListener('resize', btnRemove2);
+// function btnRemove2() {
+//     if (window.matchMedia('screen and (max-width: 600px)').matches)
+//         $(".miticoin__btn").appendTo(".miticoin__container");
+//     else
+//         $(".miticoin__btn").appendTo(".miticoin__content");
 
-}
-btnRemove2()
+// }
+// btnRemove2()
 
-window.addEventListener('resize', btnRemove3);
-function btnRemove3() {
-    if (window.matchMedia('screen and (max-width: 600px)').matches)
-        $(".phone__content").prependTo(".phone__container");
-    else
-        $(".phone__content").prependTo(".phone__block");
+// window.addEventListener('resize', btnRemove3);
+// function btnRemove3() {
+//     if (window.matchMedia('screen and (max-width: 600px)').matches)
+//         $(".phone__content").prependTo(".phone__container");
+//     else
+//         $(".phone__content").prependTo(".phone__block");
 
-}
-btnRemove3()
+// }
+// btnRemove3()
 //////////////////////// Перетащить блок ////////////////////////
 ///
 ///
@@ -135,7 +135,6 @@ function Paralaks(e) {
         });
 
         bg_lines.setAttribute("style", "transform: translate(" + -offsetX + "px, " + -offsetY + "px);");
-
     }
 }
 //////////////////////// Паралакс луны и коллайдера ////////////////////////
