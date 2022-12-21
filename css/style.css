@@ -2862,7 +2862,8 @@ input.error:-webkit-autofill:focus {
     display: none;
   }
 }
-.blur {
+.blur,
+.blurs img {
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0, 0, 0);
