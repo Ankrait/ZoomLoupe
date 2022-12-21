@@ -152,15 +152,11 @@ p {
    display: flex;
    flex-direction: column;
    min-height: 100%;
-   position: relative;
-   z-index: 1;
-
-   background-image: url("../img/Bg_Lines.svg");
-   background-size: 100% 100%;
-   background-position: 38% 15%;
+   -webkit-transform: translate3d(0, 0, 0);
 }
+
 body.overflow--hide {
-   // overflow-y: hidden;
+   overflow-y: hidden;
 }
 
 .bg__lines {
