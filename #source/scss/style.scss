@@ -1696,7 +1696,7 @@
       }
 
       & .blur._phone {
-         display: block;
+         display: none;
          width: 40%;
          top: 50%;
          left: 50%;
@@ -1715,7 +1715,7 @@
          top: 60%;
          left: 50%;
 
-         transition: transform 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
+         transition: all 0.4s ease 0.4s;
          transform: translate(-50%, -5%);
          opacity: 0;
          visibility: hidden;
@@ -1750,7 +1750,7 @@
    }
    .equipments._active {
       & .equipments__menu {
-         transition: transform 0.6s ease, opacity 0.6s ease;
+         transition: all 0.6s ease;
          transform: translateX(-50%);
          opacity: 1;
          visibility: visible;
@@ -1792,7 +1792,7 @@
          display: none;
       }
       & .blur._phone {
-         display: block;
+         display: none;
          top: 40%;
       }
    }
@@ -1831,7 +1831,8 @@
    .email {
       &__block {
          padding: 60px 15px;
-         background: linear-gradient(0deg, rgba(1, 5, 12, 0.8), rgba(1, 5, 12, 0.8)), url(../img/bg_street.png) no-repeat;
+         background: linear-gradient(0deg, rgba(1, 5, 12, 0.8), rgba(1, 5, 12, 0.8)),
+            url(../img/bg_street.png) no-repeat;
          background-position-x: 40%;
 
          border-radius: 20px;
@@ -2009,6 +2010,8 @@
 
 @import "_animation";
 
-.blur {
-   display: none;
+@media screen and (max-width: 767.89px) {
+   .displayn {
+      display: none;
+   }
 }

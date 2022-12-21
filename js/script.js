@@ -6,7 +6,7 @@ $('.equipments__menu--item').click(function () {
     $(this).addClass('_active');
     document.querySelector('.' + $(this).attr('id')).classList.add('_active');
 });
-//////////////////////// Нажатие по меню cнаряжения ////////////////////////
+////////////////////// Нажатие по меню cнаряжения ////////////////////////
 ///
 ///
 ///
@@ -22,10 +22,10 @@ new Swiper('.picklocks .swiper', {
     },
 
     freeMode: false,
-    loop: false,
+    loop: true,
     allowTouchMove: true,
 
-    autoplay: false,
+    autoplay: true,
     breakpoints: {
         768: {
             speed: 1000,
@@ -135,7 +135,6 @@ function Paralaks(e) {
         });
 
         bg_lines.setAttribute("style", "transform: translate(" + -offsetX + "px, " + -offsetY + "px);");
-
     }
 }
 //////////////////////// Паралакс луны и коллайдера ////////////////////////
@@ -377,3 +376,6 @@ if (cookiecook != "no" || cookiecook == null) {
     document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();
 }
 ///////////////////// Убрать куки /////////////////////
+
+$('.blur').addClass('displayn');
+$('.blurs').addClass('displayn');
