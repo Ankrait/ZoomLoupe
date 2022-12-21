@@ -231,7 +231,7 @@ if (anim_items.length > 0) {
 
     async function animOnScroll() {
         anim_items.forEach((item) => {
-            let scrollY = window.pageYOffset || document.documentElement.scrollTop;
+            let scrollY = window.pageYOffset;
 
             let anim_item_height = item.offsetHeight;
             let anim_item_offsetY = item.getBoundingClientRect().top + scrollY;
