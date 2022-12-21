@@ -112,10 +112,10 @@ select_item.addEventListener('click', function (e) {
     equips.classList.toggle('_active');
 });
 
-$(".equipments__menu--item").click((e) => {
-    equips.classList.remove('_active');
-    select_item_text.innerHTML = e.target.innerHTML;
-});
+// $(".equipments__menu--item").click((e) => {
+//     equips.classList.remove('_active');
+//     select_item_text.innerHTML = e.target.innerHTML;
+// });
 //////////////////////// Select ////////////////////////
 ///
 ///
