@@ -377,5 +377,4 @@ if (cookiecook != "no" || cookiecook == null) {
 }
 ///////////////////// Убрать куки /////////////////////
 
-$('.blur').addClass('displayn');
 $('.blurs').addClass('displayn');

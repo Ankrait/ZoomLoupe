@@ -157,7 +157,6 @@ p {
   min-height: 100%;
   position: relative;
   z-index: 1;
-  -webkit-transform: translate3d(0, 0, 0);
   background-image: url("../img/Bg_Lines.svg");
   background-size: 100% 100%;
   background-position: 38% 15%;
