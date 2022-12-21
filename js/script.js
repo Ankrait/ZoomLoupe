@@ -224,32 +224,32 @@ menu_miticoin.addEventListener('click', (e) => {
 ///
 ///
 ///////////////////// Анимация /////////////////////
-const anim_items = document.querySelectorAll('.anim');
+// const anim_items = document.querySelectorAll('.anim');
 
-if (anim_items.length > 0) {
-    window.addEventListener('scroll', animOnScroll);
+// if (anim_items.length > 0) {
+//     window.addEventListener('scroll', animOnScroll);
 
-    async function animOnScroll() {
-        anim_items.forEach((item) => {
-            let scrollY = window.pageYOffset;
+//     async function animOnScroll() {
+//         anim_items.forEach((item) => {
+//             let scrollY = window.pageYOffset;
 
-            let anim_item_height = item.offsetHeight;
-            let anim_item_offsetY = item.getBoundingClientRect().top + scrollY;
-            let anim_start = 4;
+//             let anim_item_height = item.offsetHeight;
+//             let anim_item_offsetY = item.getBoundingClientRect().top + scrollY;
+//             let anim_start = 4;
 
-            let anim_item_point = window.innerHeight - anim_item_height / anim_start;
-            if (anim_item_height > window.innerHeight) {
-                anim_item_point = anim_item_height - window.innerHeight / anim_start;
-            }
+//             let anim_item_point = window.innerHeight - anim_item_height / anim_start;
+//             if (anim_item_height > window.innerHeight) {
+//                 anim_item_point = anim_item_height - window.innerHeight / anim_start;
+//             }
 
-            if ((scrollY > anim_item_offsetY - anim_item_point) && (scrollY < (anim_item_offsetY + anim_item_height))) {
-                item.classList.add('_anim-active');
-            }
-        });
+//             if ((scrollY > anim_item_offsetY - anim_item_point) && (scrollY < (anim_item_offsetY + anim_item_height))) {
+//                 item.classList.add('_anim-active');
+//             }
+//         });
 
-    }
-    animOnScroll();
-}
+//     }
+//     animOnScroll();
+// }
 ///////////////////// Анимация /////////////////////
 ///
 ///
