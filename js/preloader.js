@@ -1,9 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll('img');
-    const video = document.querySelectorAll('video');
-
-    img_count = images.length;
-    video_count = video.length;
+$(document).ready(function () {
+    img_count = $('img').length;
+    video_count = $('video').length;
     media_count = img_count + video_count;
 
     const span = document.querySelector('.procents');
@@ -42,3 +39,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+// let img = document.images,
+//     img_count = img.length,
+//     img_loaded_count = 0;
+
+// for (let i = 0; i < img_count; i++) {
+//     img_clone = new Image();
+//     img_clone.onload = img_loaded;
+//     img_clone.onerror = img_loaded;
+//     image_clone.src = img[i].src;
+// }
+
+// function img_loaded() {
+//     img_loaded_count++;
+//     console.log(img_loaded_count);
+
+//     if (img_loaded_count > img_count) {
+//         document.body.classList.remove('overflow--hide')
+//     }
+// }

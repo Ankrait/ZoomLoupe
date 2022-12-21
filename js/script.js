@@ -1,12 +1,12 @@
 document.querySelectorAll('video').forEach(v => { v.setAttribute('pip', 'false'); }) //Яндекс
 //////////////////////// Нажатие по меню cнаряжения ////////////////////////
-// $('.equipments__menu--item').click(function () {
-//     $('.equipments__menu--item').removeClass('_active');
-//     $('.information__block').removeClass('_active');
-//     $(this).addClass('_active');
-//     document.querySelector('.' + $(this).attr('id')).classList.add('_active');
-// });
-//////////////////////// Нажатие по меню cнаряжения ////////////////////////
+$('.equipments__menu--item').click(function () {
+    $('.equipments__menu--item').removeClass('_active');
+    $('.information__block').removeClass('_active');
+    $(this).addClass('_active');
+    document.querySelector('.' + $(this).attr('id')).classList.add('_active');
+});
+////////////////////// Нажатие по меню cнаряжения ////////////////////////
 ///
 ///
 ///
@@ -56,49 +56,49 @@ new Swiper('.awards .swiper', {
 ///
 ///
 //////////////////////// Бургер ////////////////////////
-// let toggle = document.querySelector('.burger');
-// let header = document.querySelector('.header');
-// let body = document.body;
+let toggle = document.querySelector('.burger');
+let header = document.querySelector('.header');
+let body = document.body;
 
-// toggle.addEventListener('click', function (e) {
-//     this.classList.toggle('opened');
-//     header.classList.toggle('opened');
-//     body.classList.toggle('overflow--hide');
-// });
-// //////////////////////// Бургер ////////////////////////
-// ///
-// ///
-// ///
-// //////////////////////// Перетащить блок ////////////////////////
-// window.addEventListener('resize', btnRemove);
-// function btnRemove() {
-//     if (window.matchMedia('screen and (max-width: 600px)').matches)
-//         $(".picklocks__btn").appendTo(".picklocks__container");
-//     else
-//         $(".picklocks__btn").appendTo(".picklocks__content");
+toggle.addEventListener('click', function (e) {
+    this.classList.toggle('opened');
+    header.classList.toggle('opened');
+    body.classList.toggle('overflow--hide');
+});
+//////////////////////// Бургер ////////////////////////
+///
+///
+///
+//////////////////////// Перетащить блок ////////////////////////
+window.addEventListener('resize', btnRemove);
+function btnRemove() {
+    if (window.matchMedia('screen and (max-width: 600px)').matches)
+        $(".picklocks__btn").appendTo(".picklocks__container");
+    else
+        $(".picklocks__btn").appendTo(".picklocks__content");
 
-// }
-// btnRemove()
+}
+btnRemove()
 
-// window.addEventListener('resize', btnRemove2);
-// function btnRemove2() {
-//     if (window.matchMedia('screen and (max-width: 600px)').matches)
-//         $(".miticoin__btn").appendTo(".miticoin__container");
-//     else
-//         $(".miticoin__btn").appendTo(".miticoin__content");
+window.addEventListener('resize', btnRemove2);
+function btnRemove2() {
+    if (window.matchMedia('screen and (max-width: 600px)').matches)
+        $(".miticoin__btn").appendTo(".miticoin__container");
+    else
+        $(".miticoin__btn").appendTo(".miticoin__content");
 
-// }
-// btnRemove2()
+}
+btnRemove2()
 
-// window.addEventListener('resize', btnRemove3);
-// function btnRemove3() {
-//     if (window.matchMedia('screen and (max-width: 600px)').matches)
-//         $(".phone__content").prependTo(".phone__container");
-//     else
-//         $(".phone__content").prependTo(".phone__block");
+window.addEventListener('resize', btnRemove3);
+function btnRemove3() {
+    if (window.matchMedia('screen and (max-width: 600px)').matches)
+        $(".phone__content").prependTo(".phone__container");
+    else
+        $(".phone__content").prependTo(".phone__block");
 
-// }
-// btnRemove3()
+}
+btnRemove3()
 //////////////////////// Перетащить блок ////////////////////////
 ///
 ///
@@ -112,10 +112,10 @@ select_item.addEventListener('click', function (e) {
     equips.classList.toggle('_active');
 });
 
-// $(".equipments__menu--item").click((e) => {
-//     equips.classList.remove('_active');
-//     select_item_text.innerHTML = e.target.innerHTML;
-// });
+$(".equipments__menu--item").click((e) => {
+    equips.classList.remove('_active');
+    select_item_text.innerHTML = e.target.innerHTML;
+});
 //////////////////////// Select ////////////////////////
 ///
 ///
@@ -142,18 +142,18 @@ function Paralaks(e) {
 ///
 ///
 ///////////////////// Тык по логу = скролл на верх сайта /////////////////////
-// let logo = document.querySelector('.logo')
-// logo.addEventListener('click', () => {
-//     let scroll_to = $('body').offset().top;
-//     if ($('html, body').is(':animated'))
-//         return;
-//     if (window.scrollY == scroll_to)
-//         return;
+let logo = document.querySelector('.logo')
+logo.addEventListener('click', () => {
+    let scroll_to = $('body').offset().top;
+    if ($('html, body').is(':animated'))
+        return;
+    if (window.scrollY == scroll_to)
+        return;
 
-//     $('html, body').animate({
-//         scrollTop: scroll_to
-//     }, 1000);
-// });
+    $('html, body').animate({
+        scrollTop: scroll_to
+    }, 1000);
+});
 ///////////////////// Тык по логу = скролл на верх сайта /////////////////////
 ///
 ///
@@ -314,13 +314,13 @@ form_btn.addEventListener('click', (e) => {
     else {
         e.preventDefault();
         email.classList.add("error");
-        // $('.form__item span').addClass("error");
+        $('.form__item span').addClass("error");
     }
 });
 
 email.addEventListener('focus', () => {
     email.classList.remove("error");
-    // $('.form__item span').removeClass("error");
+    $('.form__item span').removeClass("error");
 });
 ///////////////////// отправление почты /////////////////////
 ///
@@ -376,3 +376,6 @@ if (cookiecook != "no" || cookiecook == null) {
     document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();
 }
 ///////////////////// Убрать куки /////////////////////
+
+$('.blur').addClass('displayn');
+$('.blurs').addClass('displayn');
