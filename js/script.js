@@ -11,46 +11,46 @@
 ///
 ///
 //////////////////////// Свайпер ////////////////////////
-new Swiper('.picklocks .swiper', {
-    // pagination: {
-    //     el: '.titiland .swiper-pagination',
-    //     clickable: true,
-    // },
-    navigation: {
-        nextEl: '.picklocks .swiper__arr-right',
-        prevEl: '.picklocks .swiper__arr-left'
-    },
+// new Swiper('.picklocks .swiper', {
+//     // pagination: {
+//     //     el: '.titiland .swiper-pagination',
+//     //     clickable: true,
+//     // },
+//     navigation: {
+//         nextEl: '.picklocks .swiper__arr-right',
+//         prevEl: '.picklocks .swiper__arr-left'
+//     },
 
-    freeMode: false,
-    loop: true,
-    allowTouchMove: true,
+//     freeMode: false,
+//     loop: true,
+//     allowTouchMove: true,
 
-    autoplay: true,
-    breakpoints: {
-        768: {
-            speed: 1000,
-        }
-    }
-});
+//     autoplay: true,
+//     breakpoints: {
+//         768: {
+//             speed: 1000,
+//         }
+//     }
+// });
 
-new Swiper('.awards .swiper', {
-    pagination: {
-        el: '.awards .swiper-pagination',
-        clickable: true,
-    },
+// new Swiper('.awards .swiper', {
+//     pagination: {
+//         el: '.awards .swiper-pagination',
+//         clickable: true,
+//     },
 
-    loop: false,
-    freeMode: false,
-    allowTouchMove: true,
+//     loop: false,
+//     freeMode: false,
+//     allowTouchMove: true,
 
-    autoplay: false,
-    breakpoints: {
-        768: {
-            speed: 1000,
-        }
-    },
-    spaceBetween: 20
-});
+//     autoplay: false,
+//     breakpoints: {
+//         768: {
+//             speed: 1000,
+//         }
+//     },
+//     spaceBetween: 20
+// });
 //////////////////////// Свайпер ////////////////////////
 ///
 ///
@@ -239,7 +239,7 @@ if (anim_items.length > 0) {
 
             let anim_item_point = window.innerHeight - anim_item_height / anim_start;
             if (anim_item_height > window.innerHeight) {
-                let anim_item_point = anim_item_height - window.innerHeight / anim_start;
+                anim_item_point = anim_item_height - window.innerHeight / anim_start;
             }
 
             if ((scrollY > anim_item_offsetY - anim_item_point) && (scrollY < (anim_item_offsetY + anim_item_height))) {
