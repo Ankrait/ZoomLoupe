@@ -2568,7 +2568,7 @@ input.error:-webkit-autofill:focus {
     position: absolute;
     top: 60%;
     left: 50%;
-    transition: transform 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
+    transition: all 0.4s ease 0.4s;
     transform: translate(-50%, -5%);
     opacity: 0;
     visibility: hidden;
@@ -2598,7 +2598,7 @@ input.error:-webkit-autofill:focus {
     margin: 40px 0 0 0;
   }
   .equipments._active .equipments__menu {
-    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition: all 0.6s ease;
     transform: translateX(-50%);
     opacity: 1;
     visibility: visible;
@@ -2862,6 +2862,8 @@ input.error:-webkit-autofill:focus {
   transform: translateY(-52%) scale(1);
 }
 
-.displayn {
-  display: none;
+@media screen and (max-width: 767.89px) {
+  .displayn {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
