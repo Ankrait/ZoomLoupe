@@ -71,6 +71,7 @@ aside {
 
 html,
 body {
+  height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
@@ -117,7 +118,15 @@ ul li {
 
 img {
   vertical-align: top;
+}
+
+video,
+img {
   pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1,
@@ -154,10 +163,9 @@ p {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   position: relative;
   z-index: 1;
-  min-height: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 body.overflow--hide {
