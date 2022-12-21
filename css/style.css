@@ -155,8 +155,6 @@ p {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  position: relative;
-  z-index: 1;
 }
 
 body.overflow--hide {
@@ -2858,6 +2856,6 @@ input.error:-webkit-autofill:focus {
   transform: translateY(-52%) scale(1);
 }
 
-.blur {
+.displayn {
   display: none;
 }/*# sourceMappingURL=style.css.map */
