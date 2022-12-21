@@ -11,46 +11,46 @@ $('.equipments__menu--item').click(function () {
 ///
 ///
 //////////////////////// Свайпер ////////////////////////
-// new Swiper('.picklocks .swiper', {
-//     // pagination: {
-//     //     el: '.titiland .swiper-pagination',
-//     //     clickable: true,
-//     // },
-//     navigation: {
-//         nextEl: '.picklocks .swiper__arr-right',
-//         prevEl: '.picklocks .swiper__arr-left'
-//     },
+new Swiper('.picklocks .swiper', {
+    // pagination: {
+    //     el: '.titiland .swiper-pagination',
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: '.picklocks .swiper__arr-right',
+        prevEl: '.picklocks .swiper__arr-left'
+    },
 
-//     freeMode: false,
-//     loop: true,
-//     allowTouchMove: true,
+    freeMode: false,
+    loop: true,
+    allowTouchMove: true,
 
-//     autoplay: true,
-//     breakpoints: {
-//         768: {
-//             speed: 1000,
-//         }
-//     }
-// });
+    autoplay: true,
+    breakpoints: {
+        768: {
+            speed: 1000,
+        }
+    }
+});
 
-// new Swiper('.awards .swiper', {
-//     pagination: {
-//         el: '.awards .swiper-pagination',
-//         clickable: true,
-//     },
+new Swiper('.awards .swiper', {
+    pagination: {
+        el: '.awards .swiper-pagination',
+        clickable: true,
+    },
 
-//     loop: false,
-//     freeMode: false,
-//     allowTouchMove: true,
+    loop: false,
+    freeMode: false,
+    allowTouchMove: true,
 
-//     autoplay: false,
-//     breakpoints: {
-//         768: {
-//             speed: 1000,
-//         }
-//     },
-//     spaceBetween: 20
-// });
+    autoplay: false,
+    breakpoints: {
+        768: {
+            speed: 1000,
+        }
+    },
+    spaceBetween: 20
+});
 //////////////////////// Свайпер ////////////////////////
 ///
 ///
@@ -255,128 +255,128 @@ if (anim_items.length > 0) {
 ///
 ///
 ///////////////////// Popup 404 visible /////////////////////
-const er404_blocks = document.querySelectorAll('.er_404');
-const popup404 = document.querySelector('.popup404');
+// const er404_blocks = document.querySelectorAll('.er_404');
+// const popup404 = document.querySelector('.popup404');
 
-er404_blocks.forEach(item => {
-    item.addEventListener('click', openPopupFunc);
-});
+// er404_blocks.forEach(item => {
+//     item.addEventListener('click', openPopupFunc);
+// });
 
-function openPopupFunc(e) {
-    popup404.classList.add('open');
-    body.classList.add('overflow--hide');
-    e.preventDefault();
-}
-///////////////////// Popup 404 visible /////////////////////
-///
-///
-///
-///////////////////// popup404 hidden /////////////////////
-const close_btns = document.querySelectorAll('.popup__close-btn');
+// function openPopupFunc(e) {
+//     popup404.classList.add('open');
+//     body.classList.add('overflow--hide');
+//     e.preventDefault();
+// }
+// ///////////////////// Popup 404 visible /////////////////////
+// ///
+// ///
+// ///
+// ///////////////////// popup404 hidden /////////////////////
+// const close_btns = document.querySelectorAll('.popup__close-btn');
 
-popup404.addEventListener('click', hidePopup404);
+// popup404.addEventListener('click', hidePopup404);
 
-close_btns.forEach(item => {
-    item.addEventListener('click', (e) => {
-        popup404.classList.remove('open');
-        body.classList.remove('overflow--hide')
-        e.preventDefault();
-    });
-});
+// close_btns.forEach(item => {
+//     item.addEventListener('click', (e) => {
+//         popup404.classList.remove('open');
+//         body.classList.remove('overflow--hide')
+//         e.preventDefault();
+//     });
+// });
 
-function hidePopup404(e) {
-    if (!e.target.closest('.popup__content')) {
-        popup404.classList.remove('open');
-        body.classList.remove('overflow--hide')
-    }
-    e.preventDefault();
-}
-///////////////////// popup404 hidden /////////////////////
-///
-///
-///
-///////////////////// отправление почты /////////////////////
-const email = document.querySelector('input');
-const form_btn = document.querySelector('.form__btn');
-const email_popup = document.querySelector('.email-accept');
+// function hidePopup404(e) {
+//     if (!e.target.closest('.popup__content')) {
+//         popup404.classList.remove('open');
+//         body.classList.remove('overflow--hide')
+//     }
+//     e.preventDefault();
+// }
+// ///////////////////// popup404 hidden /////////////////////
+// ///
+// ///
+// ///
+// ///////////////////// отправление почты /////////////////////
+// const email = document.querySelector('input');
+// const form_btn = document.querySelector('.form__btn');
+// const email_popup = document.querySelector('.email-accept');
 
-function emailTest(value) {
-    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(value);
-}
+// function emailTest(value) {
+//     return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(value);
+// }
 
-form_btn.addEventListener('click', (e) => {
-    let value = email.value;
+// form_btn.addEventListener('click', (e) => {
+//     let value = email.value;
 
-    if (emailTest(value)) {
-        email_popup.classList.add("open");
-        email.value = '';
-    }
-    else {
-        e.preventDefault();
-        email.classList.add("error");
-        $('.form__item span').addClass("error");
-    }
-});
+//     if (emailTest(value)) {
+//         email_popup.classList.add("open");
+//         email.value = '';
+//     }
+//     else {
+//         e.preventDefault();
+//         email.classList.add("error");
+//         $('.form__item span').addClass("error");
+//     }
+// });
 
-email.addEventListener('focus', () => {
-    email.classList.remove("error");
-    $('.form__item span').removeClass("error");
-});
-///////////////////// отправление почты /////////////////////
-///
-///
-///
-///////////////////// popup_email hidden /////////////////////
-const popup_email = document.querySelector('.email-accept')
-popup_email.addEventListener('click', hidePopupEmail);
+// email.addEventListener('focus', () => {
+//     email.classList.remove("error");
+//     $('.form__item span').removeClass("error");
+// });
+// ///////////////////// отправление почты /////////////////////
+// ///
+// ///
+// ///
+// ///////////////////// popup_email hidden /////////////////////
+// const popup_email = document.querySelector('.email-accept')
+// popup_email.addEventListener('click', hidePopupEmail);
 
-close_btns.forEach(item => {
-    item.addEventListener('click', (e) => {
-        popup_email.classList.remove('open');
-        body.classList.remove('overflow--hide')
-        e.preventDefault();
-    });
-});
+// close_btns.forEach(item => {
+//     item.addEventListener('click', (e) => {
+//         popup_email.classList.remove('open');
+//         body.classList.remove('overflow--hide')
+//         e.preventDefault();
+//     });
+// });
 
-function hidePopupEmail(e) {
-    if (!e.target.closest('.popup__content')) {
-        popup_email.classList.remove('open');
-        body.classList.remove('overflow--hide')
-    }
-    e.preventDefault();
-}
-///////////////////// popup_email hidden /////////////////////
-///
-///
-///
+// function hidePopupEmail(e) {
+//     if (!e.target.closest('.popup__content')) {
+//         popup_email.classList.remove('open');
+//         body.classList.remove('overflow--hide')
+//     }
+//     e.preventDefault();
+// }
+// ///////////////////// popup_email hidden /////////////////////
+// ///
+// ///
+// ///
+// ///////////////////// Убрать куки /////////////////////
+// const cookie_btn = document.querySelector('.cookie__btn');
+// const cookiewin = document.querySelector('.cookie');
+
+// cookie_btn.addEventListener('click', (e) => {
+//     cookiewin.classList.add("cookie--hide");
+// });
+// // функция возвращает cookie с именем name, если есть, если нет, то undefined    
+// function getCookie(name) {
+//     let matches = document.cookie.match(new RegExp(
+//         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+//     ));
+//     return matches ? decodeURIComponent(matches[1]) : undefined;
+// }
+
+// let cookiecook = getCookie("cookiecook");
+
+// // проверяем, есть ли у нас cookie, с которой мы не показываем окно и если нет, запускаем показ
+// if (cookiecook != "no" || cookiecook == null) {
+//     cookiewin.classList.remove("cookie--hide");
+//     // показываем   
+
+//     let date = new Date;
+//     date.setDate(date.getDate() + 1);
+//     document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();
+// }
 ///////////////////// Убрать куки /////////////////////
-const cookie_btn = document.querySelector('.cookie__btn');
-const cookiewin = document.querySelector('.cookie');
-
-cookie_btn.addEventListener('click', (e) => {
-    cookiewin.classList.add("cookie--hide");
-});
-// функция возвращает cookie с именем name, если есть, если нет, то undefined    
-function getCookie(name) {
-    let matches = document.cookie.match(new RegExp(
-        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return matches ? decodeURIComponent(matches[1]) : undefined;
-}
-
-let cookiecook = getCookie("cookiecook");
-
-// проверяем, есть ли у нас cookie, с которой мы не показываем окно и если нет, запускаем показ
-if (cookiecook != "no" || cookiecook == null) {
-    cookiewin.classList.remove("cookie--hide");
-    // показываем   
-
-    let date = new Date;
-    date.setDate(date.getDate() + 1);
-    document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();
-}
-///////////////////// Убрать куки /////////////////////
-const blurs = document.querySelectorAll('.blurs')
-blurs.forEach(item => {
-    item.classList.add('displayn');
-});
+// const blurs = document.querySelectorAll('.blurs')
+// blurs.forEach(item => {
+//     item.classList.add('displayn');
+// });
