@@ -149,6 +149,7 @@ p {
 }
 .wrapper {
    overflow: hidden;
+   -webkit-overflow-scrolling: touch;
    display: flex;
    flex-direction: column;
    min-height: 100%;
