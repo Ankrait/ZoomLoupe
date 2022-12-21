@@ -1,11 +1,11 @@
 // document.querySelectorAll('video').forEach(v => { v.setAttribute('pip', 'false'); }) //Яндекс
 //////////////////////// Нажатие по меню cнаряжения ////////////////////////
-$('.equipments__menu--item').click(function () {
-    $('.equipments__menu--item').removeClass('_active');
-    $('.information__block').removeClass('_active');
-    $(this).addClass('_active');
-    document.querySelector('.' + $(this).attr('id')).classList.add('_active');
-});
+// $('.equipments__menu--item').click(function () {
+//     $('.equipments__menu--item').removeClass('_active');
+//     $('.information__block').removeClass('_active');
+//     $(this).addClass('_active');
+//     document.querySelector('.' + $(this).attr('id')).classList.add('_active');
+// });
 ////////////////////// Нажатие по меню cнаряжения ////////////////////////
 ///
 ///
@@ -104,18 +104,18 @@ new Swiper('.awards .swiper', {
 ///
 ///
 //////////////////////// Selecet ////////////////////////
-let select_item = document.querySelector('.select-equipments');
-let select_item_text = document.querySelector('.select-equipments__chose');
-let equips = document.querySelector('.equipments');
+// let select_item = document.querySelector('.select-equipments');
+// let select_item_text = document.querySelector('.select-equipments__chose');
+// let equips = document.querySelector('.equipments');
 
-select_item.addEventListener('click', function (e) {
-    equips.classList.toggle('_active');
-});
+// select_item.addEventListener('click', function (e) {
+//     equips.classList.toggle('_active');
+// });
 
-$(".equipments__menu--item").click((e) => {
-    equips.classList.remove('_active');
-    select_item_text.innerHTML = e.target.innerHTML;
-});
+// $(".equipments__menu--item").click((e) => {
+//     equips.classList.remove('_active');
+//     select_item_text.innerHTML = e.target.innerHTML;
+// });
 //////////////////////// Select ////////////////////////
 ///
 ///
