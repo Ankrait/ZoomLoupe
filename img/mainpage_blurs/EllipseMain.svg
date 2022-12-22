@@ -49,7 +49,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="400" result="effect1_foregroundBlur_1451_482"/>
 </filter>
-<filter id="filter5_f_1451_482" x="0.492432" y="533.973" width="1593.92" height="1620.1" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter5_f_1451_482" x="0.492432" y="533.973" width="1793.92" height="1620.1" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_1451_482"/>
