@@ -380,3 +380,7 @@ const blurs = document.querySelectorAll('.blurs')
 blurs.forEach(item => {
     item.classList.add('displayn');
 });
+
+
+
+document.querySelector(video).play();
