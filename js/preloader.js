@@ -1,9 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll('img');
-    const video = document.querySelectorAll('video');
-
-    img_count = images.length;
-    video_count = video.length;
+$(document).ready(function () {
+    img_count = $('img').length;
+    video_count = $('video').length;
     media_count = img_count + video_count;
 
     const span = document.querySelector('.procents');
@@ -35,10 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
         circle.style.strokeDashoffset = offset;
 
         if (progress >= 100 || loaded_media == img_count) {
-            span.innerHTML = 100
+            span.innerHTML = 100;
+            circle.style.strokeDashoffset = 0;
             document.body.classList.remove('overflow--hide');
             preload.classList.add('preloader--hide');
-            circle.style.strokeDashoffset = 0;
+
         }
     }
 });

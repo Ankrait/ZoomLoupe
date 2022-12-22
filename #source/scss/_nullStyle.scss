@@ -171,7 +171,9 @@ body.overflow--hide {
 .bg__lines {
    position: absolute;
    width: 4500px;
-   top: 266px;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 .btn {
