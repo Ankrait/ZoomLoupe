@@ -2687,7 +2687,7 @@ input.error:-webkit-autofill:focus {
 .form._anim-active {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 1.2s ease 0.1s, opacity 1.2s ease 0.4s;
+  transition: all 1.2s ease 0.1s, opacity 1.2s ease 0.4s;
 }
 
 .img-phone-down._anim-active {
