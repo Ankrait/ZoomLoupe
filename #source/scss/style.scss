@@ -332,17 +332,6 @@
          position: relative;
          z-index: 3;
       }
-      & .bg {
-         position: absolute;
-         width: 200%;
-         height: 200%;
-         background: #020914;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         z-index: -10;
-         filter: blur(100px);
-      }
    }
 
    & .blur {
@@ -397,7 +386,7 @@
          url("../img/bg_street.png") no-repeat;
       background-size: cover;
       border: 1px solid #5fa8ff;
-      filter: drop-shadow(0px 0px 10px rgba(95, 168, 255, 0.3));
+      box-shadow: 0 0 20px rgb(95 168 255 / 30%);
       border-radius: 30px;
       z-index: 1;
    }
@@ -453,8 +442,6 @@
       left: 50%;
       transform: translate(-50%, -20%) scale(0);
       opacity: 0;
-
-      filter: drop-shadow(0px 0px 15px #25bc8e);
       z-index: -1;
    }
    & .img-phone-bg {
