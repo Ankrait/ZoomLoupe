@@ -381,6 +381,4 @@ blurs.forEach(item => {
     item.classList.add('displayn');
 });
 
-
-
-document.querySelector(video).play();
+document.getElementById('vid').play();
