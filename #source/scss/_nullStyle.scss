@@ -139,6 +139,9 @@ h6 {
 p {
    margin-top: 10px;
 }
+video::-webkit-media-controls {
+   display:none !important;
+}
 ////////////////////// Обнуление //////////////////////
 ///
 ///
