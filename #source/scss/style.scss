@@ -447,9 +447,9 @@
    & .img-phone-bg {
       position: absolute;
       width: 262%;
-      top: 0;
+      bottom: 94%;
       left: 50%;
-      transform: translate(-52%, 40%) scale(0);
+      transform: translate(-52%, 80%) scale(0);
       opacity: 0;
       z-index: -1;
    }
@@ -1797,7 +1797,8 @@
       }
 
       & .img-phone-bg {
-         width: 197%;
+         width: 239%;
+         bottom: 90%;
       }
 
       & .blur {

@@ -143,6 +143,14 @@ p {
   margin-top: 10px;
 }
 
+video::-webkit-media-controls {
+  display: none !important;
+  -webkit-appearance: none;
+  opacity: 0;
+  position: absolute;
+  top: -9999px;
+}
+
 [class*=__container] {
   max-width: 1450px;
   padding: 0 25px;
@@ -1328,9 +1336,9 @@ input.error:-webkit-autofill:focus {
 .phone .img-phone-bg {
   position: absolute;
   width: 262%;
-  top: 0;
+  bottom: 94%;
   left: 50%;
-  transform: translate(-52%, 40%) scale(0);
+  transform: translate(-52%, 80%) scale(0);
   opacity: 0;
   z-index: -1;
 }
@@ -2629,7 +2637,8 @@ input.error:-webkit-autofill:focus {
     width: 60%;
   }
   .phone .img-phone-bg {
-    width: 197%;
+    width: 239%;
+    bottom: 90%;
   }
   .phone .blur {
     display: none;
@@ -2698,7 +2707,7 @@ input.error:-webkit-autofill:focus {
 
 .phone__image--block._anim-active .img-phone-bg {
   transition: transform 1.2s ease 0.1s, opacity 1.2s ease 0.4s;
-  transform: translate(-52%, -40%) scale(1);
+  transform: translate(-52%, 0) scale(1);
   opacity: 1;
 }
 
