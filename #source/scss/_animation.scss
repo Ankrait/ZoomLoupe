@@ -20,7 +20,7 @@
 }
 .phone__image--block._anim-active .img-phone-bg {
     transition: transform 1.2s ease 0.1s, opacity 1.2s ease 0.4s;
-    transform: translate(-52%, -40%) scale(1);
+    transform: translate(-52%, 0) scale(1);
     opacity: 1;
 }
 
