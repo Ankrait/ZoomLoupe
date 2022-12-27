@@ -1,5 +1,12 @@
 .picklocks__collaider {
     width: 50%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 
     & img {
         width: 100%;
@@ -40,6 +47,13 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 .arr-right,
 .arr-left {
@@ -85,6 +99,15 @@
     background: linear-gradient(359.28deg, rgba(95, 168, 255, 0.4) 6.14%, rgba(95, 168, 255, 0.068) 101.75%);
     filter: blur(7.5px);
     z-index: 1;
+}
+
+.collaider__blur {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    z-index: -10;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 767.89px) {
