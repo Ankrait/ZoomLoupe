@@ -113,8 +113,9 @@ a:visited {
 a:hover {
    text-decoration: none;
 }
-a, label{
-	-webkit-tap-highlight-color: transparent;
+a,
+label {
+   -webkit-tap-highlight-color: transparent;
 }
 ul li {
    list-style: none;
@@ -122,7 +123,12 @@ ul li {
 img {
    vertical-align: top;
 }
-video,
+video {
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
 img {
    pointer-events: none;
    -moz-user-select: none;
