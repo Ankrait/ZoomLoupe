@@ -338,8 +338,8 @@ if (cookiecook != "no" || cookiecook == null) {
 }
 /////////////////// Убрать куки /////////////////////
 
-document.addEventListener("DOMContentLoaded", () => {
-    var vid = document.getElementById("vid");
-    vid.defaultMuted = true;
-    vid.play();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     var vid = document.getElementById("vid");
+//     vid.defaultMuted = true;
+//     vid.play();
+// });
