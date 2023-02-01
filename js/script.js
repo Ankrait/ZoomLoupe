@@ -337,6 +337,9 @@ if (cookiecook != "no" || cookiecook == null) {
     document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();
 }
 /////////////////// Убрать куки /////////////////////
-var vid = document.getElementById("vid");
-vid.defaultMuted = true;
-vid.play();
+
+document.addEventListener("DOMContentLoaded", () => {
+    var vid = document.getElementById("vid");
+    vid.defaultMuted = true;
+    vid.play();
+});

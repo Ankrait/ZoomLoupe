@@ -200,7 +200,8 @@
             <div class="miticoin__container">
                <div class="miticoin__video">
                   <div class="miticoin__video--block">
-                     <video id="vid" src="video/coin.mp4" autoplay="autoplay" defaultMuted loop muted playsinline preload="auto"></video>
+                     <video id="vid" src="video/coin.mp4" autoplay="autoplay" defaultMuted loop muted playsinline
+                        preload="auto"></video>
                      <img src="img/col-down.png" alt="Низ коллайдера">
 
                      <img class="blur" src="img/miticoin_blur.svg" alt="Блюр">
@@ -743,6 +744,43 @@
             <div class="footer__title">
                Zoom Loupe
             </div>
+            <div class="footer__lang">
+               <div class="footer__lang--current">
+                  <div class="footer__flag">
+                     <img src="img/rus.png" alt="">
+                  </div>
+                  <div class="footer__langname">
+                     Русский
+                  </div>
+               </div>
+               <span></span>
+               <div class="footer__block">
+                  <div data-value="ru" class="footer__lang--item">
+                     <div class="footer__flag">
+                        <img src="img/rus.png" alt="">
+                     </div>
+                     <div class="footer__langname">
+                        Русский
+                     </div>
+                  </div>
+                  <div data-value="en" class="footer__lang--item">
+                     <div class="footer__flag">
+                        <img src="img/usa.png" alt="">
+                     </div>
+                     <div class="footer__langname">
+                        Английский
+                     </div>
+                  </div>
+                  <div data-value="zh" class="footer__lang--item">
+                     <div class="footer__flag">
+                        <img src="img/china.png" alt="">
+                     </div>
+                     <div class="footer__langname">
+                        Китайский
+                     </div>
+                  </div>
+               </div>
+            </div>
             <div class="footer__share">
                <div class="footer__share--item er_404"><img src="img/twitter.svg" alt="Твиттер"></div>
                <div class="footer__share--item er_404"><img src="img/tg.svg" alt="Телеграм"></div>
@@ -803,7 +841,11 @@
       </div>
    </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+
+<script src="js/translate.js"></script>
+<script src="js/changeLang.js"></script>
 
 </html>
