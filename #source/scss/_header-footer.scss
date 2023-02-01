@@ -91,7 +91,104 @@
         line-height: 36px;
         text-transform: uppercase;
     }
+    // .footer__lang
+    &__lang {
+        margin: 12px 0 0 0;
+        padding: 8px 24px;
+        border: 1px solid #d9d9d9;
+        border-radius: 100px;
 
+        position: relative;
+        width: 218px;
+        cursor: pointer;
+    }
+
+    &__lang--current {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    // .footer__lang span
+    &__lang span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.4s ease;
+        right: 27px;
+        width: 6px;
+        height: 15px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 9px;
+            border-radius: 15px;
+            right: 0;
+            top: 0;
+            transform: rotate(-45deg) translateY(2%);
+            background: #fcfcfc;
+        }
+
+        &::after {
+            top: auto;
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    // .footer__flag
+    &__flag {
+    }
+
+    // .footer__langname
+    &__langname {
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    // .footer__block
+    &__block {
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        border: 1px solid #d9d9d9;
+        border-radius: 20px;
+        background: #040718;
+        width: 100%;
+        overflow: hidden;
+        display: none;
+    }
+
+    // .footer__lang--item
+    &__lang--item {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:last-child {
+            background: #26272c;
+            text-decoration: line-through;
+        }
+    }
+
+    // .footer__lang--item:hover
+    &__lang--item:hover {
+        background-color: #26272c;
+    }
+
+    &__lang.active {
+        & span {
+            transform: translateY(-50%) rotate(90deg);
+        }
+
+        & .footer__block {
+            display: block;
+        }
+    }
     &__share {
         margin-top: 20px;
         display: flex;
