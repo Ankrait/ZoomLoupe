@@ -30,21 +30,10 @@ function changeLanguage(el) {
 
 function translation() {
     const translate_blocks = document.querySelectorAll('[data-lang]');
-    const rmPoints = document.querySelectorAll('.rm_point');
 
     translate_blocks.forEach(el => {
         el.innerHTML = translate[lang][el.dataset.lang];
     });
-
-    rmPoints.forEach(point => {
-        let pointNum = point.className.match(/point-\d+/)[0];
-        point.querySelector(".p-info").innerHTML = translate[lang][pointNum];
-
-        if (point.querySelector(".p-title")) {
-            point.querySelector(".p-title").innerHTML = translate[lang][pointNum + 'd'];
-        }
-    });
-
 }
 
 

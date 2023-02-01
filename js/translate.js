@@ -1,568 +1,291 @@
 const translate = {
     "ru": {
-        "welcome__wel":
-            "Добро пожаловать в метасеть",
-
-        "welcome__text":
-            "Нет каждому по солнцу. <br>Но денег хватит на всех.",
-
-        "welcome__join":
-            "Вступить в cообщество",
-
-        "about__title":
-            "О проекте",
-
-        "about__info":
-            `TitiMiti – метасеть, объединяет De-fi, Game-fi и Social-fi столпы в&nbsp;единую экономическую
-            систему будущего.Которая впервые в&nbsp; истории человечества превращает азарт и&nbsp; жадность
-            в&nbsp;цифровое золото, работающее на&nbsp;благо всего сообщества.`,
-
-        "about__title2":
-            "Наша миссия",
-
-        "about__info2":
-            `<p>
-                Мы — группа проффесиональных трейдеров и&nbsp;программистов объединённых высшим разумом
-                в&nbsp;"союз игровых сообществ".
-            </p>
-            <p>
-                Наша миссия — создание революционной геймефицированной социально экономической машины, идущий
-                на&nbsp;смену современным государствам.
-            </p>`,
-
-        "titiland__text":
-            `Цифровая копия земли – токенизированная планета. Важнейший актив метасети TitiMiti. Даёт своим
-            держателям право на доход с монетизации всего проекта. Кто завладеет NFT TitiLand, тот войдёт в
-            аристократию 21 века.`,
-
-        "titiland__btntxt":
-            "Подробнее",
-
-        "zoomloop__opentxt":
-            "Открой новый мир",
-
-        "zoomloop__text":
-            `<p>
-                AR вселенная – увлекательная игра и&nbsp;инструмент с&nbsp;помощью которого ты будешь находить и
-                собирать
-                разбросанные вокруг тебя настоящие деньги, а&nbsp;так же иные ценности!
-            </p>
-            <p>
-                Место приключений, квестов, общения с&nbsp;другими игроками, заработка. Место - где живут
-                причудливые
-                существа с&nbsp;искусственным интеллектом, новая форма разумной жизни.
-            </p>`,
-
-        "zoomloop__btntxt":
-            "Начать играть",
-
-        "miticoin__text":
-            `Расчётный инструмент метасети TitiMiti. Уникальная криптовалюта с&nbsp;механизмом
-            стабильно-постоянного
-            роста курса. Экономика проекта гарантирует, что цена MitiCoin никогда не будет ниже его
-            бесконечно растущей капитализации.`,
-
-        "ourteam":
-            "НАША КОМАНДА",
-
-        "email__entertxt":
-            "Введи свою электронную почту",
-
-        "email__name":
-            "Получай новости первым",
-
-        "email__ertxt":
-            "Некорректно введена почта",
-
-        "form__btntxt":
-            "Отправить",
-
-        "tocenomics__txt":
-            "Распредление MitiToken",
-
-        "stat-tm__info":
-            "Предстоит<br> добыть майнерам",
-
-        "stat-tm__info2":
-            "Первичное<br> распредление MitiToken",
-
-        "mititoken__name":
-            "Первичное распредление MitiToken",
-
-        "mititoken__text1":
-            "Владельцы участков",
-
-        "mititoken__text2":
-            "Seed A",
-
-        "mititoken__text3":
-            "Seed B",
-
-        "mititoken__text4":
-            "Фонд розыгрышей",
-
-        "mititoken__text5":
-            "Команда",
-
-        "mititoken__btntxt":
-            "Полная токеномика",
-
-        "rm-step1":
-            "1 этап",
-        "rm-step2":
-            "2 этап",
-        "rm-step3":
-            "3 этап",
-        "rm-step4":
-            "4 этап",
-        "rm-step5":
-            "5 этап",
-
-        "point-1":
-            "Формирование идеи",
-        "point-2":
-            "Формирование высокопрофессиональной команды",
-        "point-3":
-            "Первые концепты и выбор художественного направления",
-        "point-4":
-            "Техническая документация",
-        "point-5":
-            "Прототипирование",
-        "point-6":
-            "Дизайн документ",
-        "point-7":
-            "Токеномика",
-        "point-8":
-            "Whitepaper",
-        "point-9":
-            "Запуск сайта Titimiti и Zoom Loupe",
-        "point-10":
-            "Запуск социальных сетей",
-        "point-11":
-            "Zoom Loupe Открытый бета-тест",
-        "point-12":
-            "Первый взгляд на NFT",
-        "point-13":
-            "Miticoin release",
-        "point-14":
-            "Аудит смартконтрактов",
-        "point-15":
-            "Запуск сайта Titiland ",
-        "point-16":
-            "Продажи NFTW",
-        "point-17":
-            "Zoom Loupe Beta release",
-        "point-18":
-            "NFTA drops",
-        "point-19":
-            "Запуск маркетплейса",
-        "point-20":
-            "Формирование Landlords",
-        "point-21":
-            "Продажи NFTO",
-        "point-22":
-            "Запуск майнинга",
-        "point-23":
-            "Запуск стейкинга",
-        "point-24":
-            "Создание инфраструктуры земель Titiland",
-        "point-25":
-            "Формирование Союзов, Стран и Орденов",
-        "point-26":
-            "Первое децентрализованное голосование",
-        "point-27":
-            "Внедрение NFT паспорт системы",
-        "point-28":
-            "Социальная сеть Titimiti",
-        "point-29":
-            "Titimiti multichain",
-        "point-30":
-            "Google takeover",
-
-        "point-1d":
-            "Декабрь <span> 2021</span>",
-        "point-5d":
-            "ФЕВРАЛЬ <span> 2021</span>",
-        "point-6d":
-            "MAЙ <span> 2022</span>",
-        "point-8d":
-            "Август <span> 2022</span>",
-        "point-9d":
-            "СЕНТЯБРЬ <span>2022</span>",
-        "point-14d":
-            "Декабрь <span> 2022</span>",
-        "point-15d":
-            "Январь <span> 2023</span>",
-        "point-21d":
-            "Май <span> 2023</span>",
-        "point-25d":
-            "АВГУСТ <span> 2023</span>",
-        "point-30d":
-            "2027",
-
-        "text-moon":
-            "На луну!",
+        "mainpage__info":
+            " AR вселенная – увлекательная игра и&nbsp;инструмент с&nbsp;помощью которого ты будешь находить и&nbsp;собирать разбросанные вокруг тебя настоящие деньги. ",
+        "about__title": " О чем игра? ",
+        "about__info": " <p> AR вселенная – увлекательная игра и&nbsp;инструмент с&nbsp;помощью которого ты будешь находить и&nbsp;собирать разбросанные вокруг тебя настоящие деньги, а&nbsp;так же иные ценности! </p> <p> Место приключений, квестов, общения с&nbsp;другими игроками, заработка. Место - где живут причудливые существа с&nbsp;искусственным интеллектом, новая форма разумной жизни. </p> ",
+        "about__title2": " Цель игры ",
+        "about__info2": " <p> AR вселенная – увлекательная игра и&nbsp;инструмент с&nbsp;помощью которого ты будешь находить и&nbsp;собирать разбросанные вокруг тебя настоящие деньги, а&nbsp;так же иные ценности! </p> <p> Место приключений, квестов, общения с&nbsp;другими игроками, заработка. Место - где живут причудливые существа с&nbsp;искусственным интеллектом, новая форма разумной жизни. </p> ",
+        "steps__title": " Играй с друзьями ",
+        "steps__text": " Место, где ты можешь играть вместе со&nbsp;своими друзьями ",
+        "steps__title2": " Выполняй квесты ",
+        "steps__text2": " Проходи захватывающие квесты по&nbsp;всему городу ",
+        "steps__title3": " Получай награды ",
+        "steps__text3": " Получай за&nbsp;это ценные награды и&nbsp;обменивай их на&nbsp;деньги ",
+        "email__title": " Как начать играть? ",
+        "email__info": " Наша игра находится в&nbsp;разработке. Подпишитесь на&nbsp;новости, чтобы попасть первым на&nbsp;открытие. ",
+        "email-er": "Некорректно введена почта",
+        "form__btntxt": "Отправить",
+        "miticoin__title": " Основная валюта — MITICOIN ",
+        "miticoin__info": " Расчётный инструмент метасети TitiMiti. Уникальная криптовалюта с&nbsp;механизмом стабильно-постоянного роста курса. Экономика проекта гарантирует, что цена MitiCoin никогда не&nbsp;будет ниже его бесконечно растущей капитализации. ",
+        "miticoin__btntxt": "Подробнее",
+        "phone__title": "Ищи сокровища",
+        "phone__info": " <p> Расчётный инструмент метасети TitiMiti. Уникальная криптовалюта с&nbsp;механизмом стабильно-постоянного роста курса. Экономика проекта гарантирует, что цена MitiCoin никогда не&nbsp;будет ниже его бесконечно растущей капитализации. </p> <p> Экономика проекта гарантирует, что цена MitiCoin никогда не&nbsp;будет ниже его бесконечно растущей капитализации. </p> ",
+        "picklocks__title": " Взламывай их&nbsp;отмычками ",
+        "picklocks__info": " Для взлома сундука вам нужны отмычки.<br> Их можно купить в&nbsp;магазине или найти в&nbsp;открытом сундуке. ",
+        "picklocks__btntxt": " Купить ",
+        "awards__name": "Получай награды",
+        "awards__info1": " Уникальная криптовалюта с&nbsp;механизмом стабильно-постоянного роста курса. ",
+        "awards__info2": " Самый популярный стейбл коин, который обеспечивается запасами долларов США. ",
+        "awards__title": "Бонусы от партнеров",
+        "awards__info3": " Различные бонусы от&nbsp;наших партнеров.",
+        "awards__info4": " Это NFT Miti-Coin, которые выдаются игрокам.",
+        "awards__title2": "Предметы для игры ",
+        "awards__info5": " Они помогут быстрее находить сокровища в Zoom Loupe.",
+        "awards__info1": " Уникальная криптовалюта с&nbsp;механизмом стабильно-постоянного роста курса. ",
+        "awards__info2": " Самый популярный стейбл коин, который обеспечивается запасами долларов США. ",
+        "awards__title": "Бонусы от партнеров",
+        "awards__info3": " Различные бонусы от&nbsp;наших партнеров. ",
+        "awards__info4": " Это NFT Miti-Coin, которые выдаются игрокам.",
+        "awards__title2": "Предметы для игры ",
+        "awards__info5": " Они помогут быстрее находить сокровища в Zoom Loupe.",
+        "equipments__title": " Система экипировки ",
+        "equipments__text": " Есть различные виды экипировки ",
+        "select-equipments__chose": "Очки",
+        "e_m_1": "Модуль навигатора",
+        "e_m_2": "Шапка",
+        "e_m_3": "Очки",
+        "e_m_4": "Цепочка",
+        "e_m_5": "Куртка",
+        "e_m_6": "Перчатки",
+        "e_m_7": "Браслет",
+        "e_m_8": "Штаны",
+        "e_m_9": "Обувь",
+        "eq_name_1": " Очки повышают характеристику “удача” ",
+        "eq_info_1": " С помощью этого то-то-то.<br>Удача нужна для того-то того-то того-то. ",
+        "eq_lvl_1_1": "Очки 1 уровня",
+        "eq_boost_1_1": "Увеличивает удачу на&nbsp;<span>3%</span>",
+        "eq_lvl_1_2": "Очки 2 уровня",
+        "eq_boost_1_2": "Увеличивает удачу на&nbsp;<span>5%</span>",
+        "eq_lvl_1_3": "Очки 3 уровня",
+        "eq_boost_1_3": "Увеличивает удачу на&nbsp;<span>7%</span>",
+        "eq_name_2": " Обувь - повышает характеристику “очки опыта” ",
+        "eq_info_2": " С помощью этого то-то-то.<br>Удача нужна для того-то того-то того-то. ",
+        "eq_lvl_2_1": "Обувь 1 уровня",
+        "eq_boost_2_1": "Дает <span>100</span> едениц опыта",
+        "eq_lvl_2_2": "Обувь 2 уровня",
+        "eq_boost_2_2": "Дает <span>150</span> едениц опыта",
+        "eq_lvl_2_3": "Обувь 3 уровня",
+        "eq_boost_2_3": "Дает <span>200</span> едениц опыта",
+        "eq_name_3": " Куртка - повышает характеристику “очки опыта” ",
+        "eq_info_3": " С помощью этого то-то-то.<br>Удача нужна для того-то того-то того-то. ",
+        "eq_lvl_3_1": "Куртка 1 уровня",
+        "eq_boost_3_1": "Дает <span>150</span> едениц опыта",
+        "eq_lvl_3_2": "Куртка 2 уровня",
+        "eq_boost_3_2": "Дает <span>300</span> едениц опыта",
+        "eq_lvl_3_3": "Куртка 3 уровня",
+        "eq_boost_3_3": "Дает <span>600</span> едениц опыта",
+        "eq_name_4": " Штаны - повышают характеристику “очки опыта”. ",
+        "eq_info_4": " С помощью этого то-то-то.<br>Удача нужна для того-то того-то того-то. ",
+        "eq_lvl_4_1": "Штаны 1 уровня",
+        "eq_boost_4_1": "Дает <span>100</span> едениц опыта",
+        "eq_lvl_4_2": "Штаны 2 уровня",
+        "eq_boost_4_2": "Дает <span>200</span> едениц опыта",
+        "eq_lvl_4_3": "Штаны 3 уровня",
+        "eq_boost_4_3": "Дает <span>400</span> едениц опыта",
+        "eq_name_5": " Штаны - повышают характеристику “очки опыта”. ",
+        "eq_info_5": " С помощью этого то-то-то.<br>Удача нужна для того-то того-то того-то. ",
+        "eq_lvl_5_1": "Перчатки 1 уровня",
+        "eq_boost_5_1": "Увеличивает удачу на <span>3%</span>",
+        "eq_lvl_5_2": "Перчатки 2 уровня",
+        "eq_boost_5_2": "Увеличивает удачу на <span>7%</span>",
+        "eq_lvl_5_3": "Перчатки 3 уровня",
+        "eq_boost_5_3": "Увеличивает удачу на <span>10%</span>",
+        "helpus__txt": " Помоги нам и получи за это бонусы ",
+        "helpus__title": "Стань исследователем",
+        "helpus__info": " У тебя будет возможность...<br> За это ты будешь получать...<br> И еще какое-то описание<br> ",
+        "helpus__btntxt": "Подробнее",
     },
     "en": {
-        "welcome__wel":
-            "",
-
-        "welcome__text":
-            "",
-
-        "welcome__join":
-            "",
-
-        "about__title":
-            "",
-
-        "about__info":
-            ``,
-
-        "about__title2":
-            "",
-
-        "about__info2":
-            ``,
-
-        "titiland__text":
-            ``,
-
-        "titiland__btntxt":
-            "",
-
-        "zoomloop__opentxt":
-            "  ",
-
-        "zoomloop__text":
-            ``,
-
-        "zoomloop__btntxt":
-            " ",
-
-        "miticoin__text":
-            ``,
-
-        "ourteam":
-            " ",
-
-        "email__entertxt":
-            "",
-
-        "email__name":
-            "",
-
-        "email__ertxt":
-            "",
-
-        "form__btntxt":
-            "",
-
-        "tocenomics__txt":
-            "",
-
-        "stat-tm__info":
-            "",
-
-        "stat-tm__info2":
-            "",
-
-        "mititoken__name":
-            "",
-
-        "mititoken__text1":
-            "",
-
-        "mititoken__text2":
-            "",
-
-        "mititoken__text3":
-            "",
-
-        "mititoken__text4":
-            "",
-
-        "mititoken__text5":
-            "",
-
-        "mititoken__btntxt":
-            "",
-
-        "rm-step1":
-            "",
-        "rm-step2":
-            "",
-        "rm-step3":
-            "",
-        "rm-step4":
-            "",
-        "rm-step5":
-            "",
-
-        "point-1":
-            "",
-        "point-2":
-            "",
-        "point-3":
-            "",
-        "point-4":
-            "",
-        "point-5":
-            "",
-        "point-6":
-            "",
-        "point-7":
-            "",
-        "point-8":
-            "",
-        "point-9":
-            "",
-        "point-10":
-            "",
-        "point-11":
-            "",
-        "point-12":
-            "",
-        "point-13":
-            "",
-        "point-14":
-            "",
-        "point-15":
-            "",
-        "point-16":
-            "",
-        "point-17":
-            "",
-        "point-18":
-            "",
-        "point-19":
-            "",
-        "point-20":
-            "",
-        "point-21":
-            "",
-        "point-22":
-            "",
-        "point-23":
-            "",
-        "point-24":
-            "",
-        "point-25":
-            "",
-        "point-26":
-            "",
-        "point-27":
-            "",
-        "point-28":
-            "",
-        "point-29":
-            "",
-        "point-30":
-            "",
-
-        "point-1d":
-            "",
-        "point-5d":
-            "",
-        "point-6d":
-            "",
-        "point-8d":
-            "",
-        "point-9d":
-            "",
-        "point-14d":
-            "",
-        "point-15d":
-            "",
-        "point-21d":
-            "",
-        "point-25d":
-            "",
-        "point-30d":
-            "2027",
-
-        "text-moon":
-            "",
+        "mainpage__info": "",
+        "about__title": "",
+        "about__info": "",
+        "about__title2": "",
+        "about__info2": "",
+        "steps__title": "",
+        "steps__text": "",
+        "steps__title2": "",
+        "steps__text2": "",
+        "steps__title3": "",
+        "steps__text3": "",
+        "email__title": "",
+        "email__info": "",
+        "email-er": "",
+        "form__btntxt": "",
+        "miticoin__title": "",
+        "miticoin__info": "",
+        "miticoin__btntxt": "",
+        "phone__title": "",
+        "phone__info": "",
+        "picklocks__title": "",
+        "picklocks__info": "",
+        "picklocks__btntxt": "",
+        "awards__name": "",
+        "awards__info1": "",
+        "awards__info2": "",
+        "awards__title": "",
+        "awards__info3": "",
+        "awards__info4": "",
+        "awards__title2": "",
+        "awards__info5": "",
+        "awards__info1": "",
+        "awards__info2": "",
+        "awards__title": "",
+        "awards__info3": "",
+        "awards__info4": "",
+        "awards__title2": "",
+        "awards__info5": "",
+        "equipments__title": "",
+        "equipments__text": "",
+        "select-equipments__chose": "",
+        "e_m_1": "",
+        "e_m_2": "",
+        "e_m_3": "",
+        "e_m_4": "",
+        "e_m_5": "",
+        "e_m_6": "",
+        "e_m_7": "",
+        "e_m_8": "",
+        "e_m_9": "",
+        "eq_name_1": "",
+        "eq_info_1": "",
+        "eq_lvl_1_1": "",
+        "eq_boost_1_1": "",
+        "eq_lvl_1_2": "",
+        "eq_boost_1_2": "",
+        "eq_lvl_1_3": "",
+        "eq_boost_1_3": "",
+        "eq_name_2": "",
+        "eq_info_2": "",
+        "eq_lvl_2_1": "",
+        "eq_boost_2_1": "",
+        "eq_lvl_2_2": "",
+        "eq_boost_2_2": "",
+        "eq_lvl_2_3": "",
+        "eq_boost_2_3": "",
+        "eq_name_3": "",
+        "eq_info_3": "",
+        "eq_lvl_3_1": "",
+        "eq_boost_3_1": "",
+        "eq_lvl_3_2": "",
+        "eq_boost_3_2": "",
+        "eq_lvl_3_3": "",
+        "eq_boost_3_3": "",
+        "eq_name_4": "",
+        "eq_info_4": "",
+        "eq_lvl_4_1": "",
+        "eq_boost_4_1": "",
+        "eq_lvl_4_2": "",
+        "eq_boost_4_2": "",
+        "eq_lvl_4_3": "",
+        "eq_boost_4_3": "",
+        "eq_name_5": "",
+        "eq_info_5": "",
+        "eq_lvl_5_1": "",
+        "eq_boost_5_1": "",
+        "eq_lvl_5_2": "",
+        "eq_boost_5_2": "",
+        "eq_lvl_5_3": "",
+        "eq_boost_5_3": "",
+        "helpus__txt": "",
+        "helpus__title": "",
+        "helpus__info": "",
+        "helpus__btntxt": "",
     },
     "zh": {
-        "welcome__wel":
-            "",
-
-        "welcome__text":
-            "",
-
-        "welcome__join":
-            "",
-
-        "about__title":
-            "",
-
-        "about__info":
-            ``,
-
-        "about__title2":
-            "",
-
-        "about__info2":
-            ``,
-
-        "titiland__text":
-            ``,
-
-        "titiland__btntxt":
-            "",
-
-        "zoomloop__opentxt":
-            "  ",
-
-        "zoomloop__text":
-            ``,
-
-        "zoomloop__btntxt":
-            " ",
-
-        "miticoin__text":
-            ``,
-
-        "ourteam":
-            " ",
-
-        "email__entertxt":
-            "",
-
-        "email__name":
-            "",
-
-        "email__ertxt":
-            "",
-
-        "form__btntxt":
-            "",
-
-        "tocenomics__txt":
-            "",
-
-        "stat-tm__info":
-            "",
-
-        "stat-tm__info2":
-            "",
-
-        "mititoken__name":
-            "",
-
-        "mititoken__text1":
-            "",
-
-        "mititoken__text2":
-            "",
-
-        "mititoken__text3":
-            "",
-
-        "mititoken__text4":
-            "",
-
-        "mititoken__text5":
-            "",
-
-        "mititoken__btntxt":
-            "",
-
-        "rm-step1":
-            "",
-        "rm-step2":
-            "",
-        "rm-step3":
-            "",
-        "rm-step4":
-            "",
-        "rm-step5":
-            "",
-
-        "point-1":
-            "",
-        "point-2":
-            "",
-        "point-3":
-            "",
-        "point-4":
-            "",
-        "point-5":
-            "",
-        "point-6":
-            "",
-        "point-7":
-            "",
-        "point-8":
-            "",
-        "point-9":
-            "",
-        "point-10":
-            "",
-        "point-11":
-            "",
-        "point-12":
-            "",
-        "point-13":
-            "",
-        "point-14":
-            "",
-        "point-15":
-            "",
-        "point-16":
-            "",
-        "point-17":
-            "",
-        "point-18":
-            "",
-        "point-19":
-            "",
-        "point-20":
-            "",
-        "point-21":
-            "",
-        "point-22":
-            "",
-        "point-23":
-            "",
-        "point-24":
-            "",
-        "point-25":
-            "",
-        "point-26":
-            "",
-        "point-27":
-            "",
-        "point-28":
-            "",
-        "point-29":
-            "",
-        "point-30":
-            "",
-
-        "point-1d":
-            "",
-        "point-5d":
-            "",
-        "point-6d":
-            "",
-        "point-8d":
-            "",
-        "point-9d":
-            "",
-        "point-14d":
-            "",
-        "point-15d":
-            "",
-        "point-21d":
-            "",
-        "point-25d":
-            "",
-        "point-30d":
-            "2027",
-
-        "text-moon":
-            "",
+        "mainpage__info": "",
+        "about__title": "",
+        "about__info": "",
+        "about__title2": "",
+        "about__info2": "",
+        "steps__title": "",
+        "steps__text": "",
+        "steps__title2": "",
+        "steps__text2": "",
+        "steps__title3": "",
+        "steps__text3": "",
+        "email__title": "",
+        "email__info": "",
+        "email-er": "",
+        "form__btntxt": "",
+        "miticoin__title": "",
+        "miticoin__info": "",
+        "miticoin__btntxt": "",
+        "phone__title": "",
+        "phone__info": "",
+        "picklocks__title": "",
+        "picklocks__info": "",
+        "picklocks__btntxt": "",
+        "awards__name": "",
+        "awards__info1": "",
+        "awards__info2": "",
+        "awards__title": "",
+        "awards__info3": "",
+        "awards__info4": "",
+        "awards__title2": "",
+        "awards__info5": "",
+        "awards__info1": "",
+        "awards__info2": "",
+        "awards__title": "",
+        "awards__info3": "",
+        "awards__info4": "",
+        "awards__title2": "",
+        "awards__info5": "",
+        "equipments__title": "",
+        "equipments__text": "",
+        "select-equipments__chose": "",
+        "e_m_1": "",
+        "e_m_2": "",
+        "e_m_3": "",
+        "e_m_4": "",
+        "e_m_5": "",
+        "e_m_6": "",
+        "e_m_7": "",
+        "e_m_8": "",
+        "e_m_9": "",
+        "eq_name_1": "",
+        "eq_info_1": "",
+        "eq_lvl_1_1": "",
+        "eq_boost_1_1": "",
+        "eq_lvl_1_2": "",
+        "eq_boost_1_2": "",
+        "eq_lvl_1_3": "",
+        "eq_boost_1_3": "",
+        "eq_name_2": "",
+        "eq_info_2": "",
+        "eq_lvl_2_1": "",
+        "eq_boost_2_1": "",
+        "eq_lvl_2_2": "",
+        "eq_boost_2_2": "",
+        "eq_lvl_2_3": "",
+        "eq_boost_2_3": "",
+        "eq_name_3": "",
+        "eq_info_3": "",
+        "eq_lvl_3_1": "",
+        "eq_boost_3_1": "",
+        "eq_lvl_3_2": "",
+        "eq_boost_3_2": "",
+        "eq_lvl_3_3": "",
+        "eq_boost_3_3": "",
+        "eq_name_4": "",
+        "eq_info_4": "",
+        "eq_lvl_4_1": "",
+        "eq_boost_4_1": "",
+        "eq_lvl_4_2": "",
+        "eq_boost_4_2": "",
+        "eq_lvl_4_3": "",
+        "eq_boost_4_3": "",
+        "eq_name_5": "",
+        "eq_info_5": "",
+        "eq_lvl_5_1": "",
+        "eq_boost_5_1": "",
+        "eq_lvl_5_2": "",
+        "eq_boost_5_2": "",
+        "eq_lvl_5_3": "",
+        "eq_boost_5_3": "",
+        "helpus__txt": "",
+        "helpus__title": "",
+        "helpus__info": "",
+        "helpus__btntxt": "",
     }
 }
