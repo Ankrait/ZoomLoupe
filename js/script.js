@@ -12,10 +12,6 @@ $('.equipments__menu--item').click(function () {
 ///
 ////////////////////// Свайпер ////////////////////////
 new Swiper('.picklocks .swiper', {
-    // pagination: {
-    //     el: '.titiland .swiper-pagination',
-    //     clickable: true,
-    // },
     navigation: {
         nextEl: '.picklocks .swiper__arr-right',
         prevEl: '.picklocks .swiper__arr-left'
@@ -103,7 +99,7 @@ btnRemove3()
 ///
 ///
 ///
-//////////////////////// Selecet ////////////////////////
+//////////////////////// Select ////////////////////////
 let select_item = document.querySelector('.select-equipments');
 let select_item_text = document.querySelector('.select-equipments__chose');
 let equips = document.querySelector('.equipments');
@@ -167,8 +163,8 @@ const menu_titiland = document.querySelector('.scroll_titiland');
 const menu_zoomloop = document.querySelector('.scroll_zoomloop');
 const menu_miticoin = document.querySelector('.scroll_miticoin');
 
-menu_roadmap.addEventListener('click', (e) => {
-    let scroll_to = $('.roadmap').offset().top - 220;
+const onMenuClick = (blockName, offset) => {
+    let scroll_to = $(blockName).offset().top + offset;
     if ($('html, body').is(':animated'))
         return;
     if (window.scrollY == Math.floor(scroll_to))
@@ -178,46 +174,12 @@ menu_roadmap.addEventListener('click', (e) => {
         scrollTop: scroll_to
     }, 1000);
     removeMenuOpened();
-});
-
-menu_titiland.addEventListener('click', (e) => {
-    let scroll_to = $('.titiland').offset().top - 100;
-    if ($('html, body').is(':animated'))
-        return;
-    if (window.scrollY == Math.floor(scroll_to))
-        return;
-
-    $('html, body').animate({
-        scrollTop: scroll_to
-    }, 1000);
-    removeMenuOpened();
-});
-
-menu_zoomloop.addEventListener('click', (e) => {
-    let scroll_to = $('.zoomloop').offset().top - 180;
-    if ($('html, body').is(':animated'))
-        return;
-    if (window.scrollY == Math.floor(scroll_to))
-        return;
-
-    $('html, body').animate({
-        scrollTop: scroll_to
-    }, 1000);
-    removeMenuOpened();
-});
-
-menu_miticoin.addEventListener('click', (e) => {
-    let scroll_to = $('.miticoin').offset().top - 170;
-    if ($('html, body').is(':animated'))
-        return;
-    if (window.scrollY == Math.floor(scroll_to))
-        return;
-
-    $('html, body').animate({
-        scrollTop: scroll_to
-    }, 1000);
-    removeMenuOpened();
-});
+}
+menu_tocenomic.addEventListener('click', () => onMenuClick('.tocenomics', -200));
+menu_roadmap.addEventListener('click', () => onMenuClick('.roadmap', -220));
+menu_titiland.addEventListener('click', () => onMenuClick('.titiland', -100));
+menu_zoomloop.addEventListener('click', () => onMenuClick('.zoomloop', -180));
+menu_miticoin.addEventListener('click', () => onMenuClick('.miticoin', -170));
 */
 ///////////////////// Тык по меню скролл /////////////////////
 ///
@@ -305,14 +267,13 @@ function emailTest(value) {
 }
 
 form_btn.addEventListener('click', (e) => {
-    let value = email.value;
+    e.preventDefault();
 
-    if (emailTest(value)) {
+    if (emailTest(email.value)) {
         email_popup.classList.add("open");
-        email.value = '';
+        $.ajax(`send.php/?email=${email.value}`).then(() => email.value = '')
     }
     else {
-        e.preventDefault();
         email.classList.add("error");
         $('.form__item span').addClass("error");
     }
@@ -376,9 +337,3 @@ if (cookiecook != "no" || cookiecook == null) {
     document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();
 }
 /////////////////// Убрать куки /////////////////////
-const blurs = document.querySelectorAll('.blurs')
-blurs.forEach(item => {
-    item.classList.add('displayn');
-});
-
-document.getElementById('vid').play();
