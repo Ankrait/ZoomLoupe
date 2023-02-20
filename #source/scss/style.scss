@@ -701,6 +701,8 @@
 }
 
 .equipments {
+   position: relative;
+   z-index: 2;
    margin-top: 200px;
    &__container {
       display: flex;
@@ -852,8 +854,8 @@
       justify-content: center;
 
       opacity: 0;
-      overflow: hidden;
-      transition: opacity 0.8s ease;
+      visibility: hidden;
+      transition: all 0.8s ease;
 
       position: absolute;
       top: 0;
@@ -863,7 +865,7 @@
 
       &._active {
          opacity: 1;
-         overflow: visible;
+         visibility: visible;
       }
       &.main {
          position: relative;
@@ -940,6 +942,7 @@
       font-size: 18px;
       line-height: 22px;
       color: #eff2f2;
+      white-space: nowrap;
 
       & span {
          color: #27b69d;
@@ -951,12 +954,19 @@
       height: 42px;
       width: 1px;
       border-radius: 5px;
+      margin: 0 12px;
    }
 
    &__image {
-      flex: 0 0 40%;
+      flex: 0 1 177px;
       display: flex;
       justify-content: center;
+
+      img {
+         width: 80%;
+         height: 20%;
+         object-fit: cover;
+      }
    }
 }
 
@@ -1375,7 +1385,7 @@
       }
       &__image {
          & img {
-            width: 130px;
+            width: 100%;
          }
       }
    }
@@ -1845,6 +1855,12 @@
       margin: 150px 0 0 0;
       &__item {
          padding: 10px 10px;
+      }
+   }
+
+   .information {
+      &__boost {
+         font-size: 12px;
       }
    }
 
