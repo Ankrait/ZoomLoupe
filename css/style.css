@@ -2155,6 +2155,8 @@ input.error:focus {
 }
 
 .equipments {
+  position: relative;
+  z-index: 2;
   margin-top: 200px;
 }
 .equipments__container {
@@ -2330,10 +2332,10 @@ input.error:focus {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0;
-  overflow: hidden;
-  -webkit-transition: opacity 0.8s ease;
-  -o-transition: opacity 0.8s ease;
-  transition: opacity 0.8s ease;
+  visibility: hidden;
+  -webkit-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -2342,7 +2344,7 @@ input.error:focus {
 }
 .information__block._active {
   opacity: 1;
-  overflow: visible;
+  visibility: visible;
 }
 .information__block.main {
   position: relative;
@@ -2418,6 +2420,7 @@ input.error:focus {
   font-size: 18px;
   line-height: 22px;
   color: #eff2f2;
+  white-space: nowrap;
 }
 .information__boost span {
   color: #27b69d;
@@ -2427,17 +2430,24 @@ input.error:focus {
   height: 42px;
   width: 1px;
   border-radius: 5px;
+  margin: 0 12px;
 }
 .information__image {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+      -ms-flex: 0 1 177px;
+          flex: 0 1 177px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.information__image img {
+  width: 80%;
+  height: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .helpus {
@@ -2849,7 +2859,7 @@ input.error:focus {
     line-height: 17px;
   }
   .information__image img {
-    width: 130px;
+    width: 100%;
   }
   .helpus {
     margin: 150px 0 0 0;
@@ -3324,6 +3334,9 @@ input.error:focus {
   }
   .steps__item {
     padding: 10px 10px;
+  }
+  .information__boost {
+    font-size: 12px;
   }
   .helpus {
     margin: 150px 0 0 0;
