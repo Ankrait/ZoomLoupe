@@ -17,6 +17,7 @@
    }
 
    &__image {
+      margin: -85px 0 -50px 0;
    }
 
    &__title {
@@ -958,14 +959,13 @@
    }
 
    &__image {
-      flex: 0 1 177px;
+      flex: 0 1 150px;
       display: flex;
       justify-content: center;
-
+      height: 100%;
       img {
-         width: 80%;
-         height: 20%;
-         object-fit: cover;
+         height: 100%;
+         object-fit: contain;
       }
    }
 }
@@ -1244,7 +1244,8 @@
       }
 
       &__image {
-         max-width: 285px;
+         margin: -50px 0 -5% 0;
+         max-width: 500px;
          & img {
             width: 100%;
          }
@@ -1641,6 +1642,7 @@
       }
       &__item {
          width: min(100%, 450px);
+         height: 75px;
       }
       & .blur {
          width: min(1400px, 250%);

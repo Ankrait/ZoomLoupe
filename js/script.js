@@ -4,7 +4,8 @@ $('.equipments__menu--item').click(function () {
     $('.equipments__menu--item').removeClass('_active');
     $('.information__block').removeClass('_active');
     $(this).addClass('_active');
-    document.querySelector('.' + $(this).attr('id')).classList.add('_active');
+    if (document.querySelector('.' + $(this).attr('id')))
+        document.querySelector('.' + $(this).attr('id')).classList.add('_active');
 });
 //////////////////// Нажатие по меню cнаряжения ////////////////////////
 ///
