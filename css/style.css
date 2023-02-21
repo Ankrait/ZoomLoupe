@@ -1211,6 +1211,10 @@ input.error:focus {
 }
 .mainpage__image {
   margin: -85px 0 -50px 0;
+  max-width: 660px;
+}
+.mainpage__image img {
+  width: 100%;
 }
 .mainpage__title {
   font-weight: 900;
