@@ -1316,6 +1316,26 @@ input.error:focus {
   font-size: 18px;
   line-height: 130%;
 }
+.about__info span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 130%;
+  margin: 20px 0 0 0;
+}
+.about__info.points p {
+  padding-left: 14px;
+  position: relative;
+}
+.about__info.points p::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  top: 9px;
+  left: 0px;
+  border-radius: 50%;
+  background: #5FA8FF;
+}
 
 .steps {
   margin: 200px 0 0 0;
@@ -1439,10 +1459,11 @@ input.error:focus {
   opacity: 0;
 }
 .email__info {
-  margin: 12px 0 0 0;
+  margin: 12px auto 0 auto;
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
+  max-width: 454px;
   text-align: center;
 }
 
@@ -1558,6 +1579,7 @@ input.error:focus {
   opacity: 0;
 }
 .miticoin__info {
+  max-width: 600px;
   margin: 20px 0 0 0;
   font-weight: 400;
   font-size: 18px;

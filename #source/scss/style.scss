@@ -123,6 +123,28 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 130%;
+
+      & span {
+         display: inline-block;
+         font-size: 14px;
+         line-height: 130%;
+         margin: 20px 0 0 0;
+      }
+
+      &.points p {
+         padding-left: 14px;
+         position: relative;
+         &::before {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            top: 9px;
+            left: 0px;
+            border-radius: 50%;
+            background:  #5FA8FF;;
+         }
+      }
    }
 }
 
@@ -251,11 +273,12 @@
    }
 
    &__info {
-      margin: 12px 0 0 0;
+      margin: 12px auto 0 auto;
 
       font-weight: 400;
       font-size: 18px;
       line-height: 130%;
+      max-width: 454px;
 
       text-align: center;
    }
@@ -362,6 +385,7 @@
    }
 
    &__info {
+      max-width: 600px;
       margin: 20px 0 0 0;
       font-weight: 400;
       font-size: 18px;
