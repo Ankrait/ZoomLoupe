@@ -1,8 +1,11 @@
 # ZoomLoupe
-Лендинг.
-Коммерческий проект, состоящий из 4 сайтов: 2 лендинга и 2 верстки под дальнейшее внедрения во фреймворк.
+Лендинг. 
 <br />
-[Ссылка на GitHub Pages](https://ankrait.github.io/ZoomLoupe/)
+Коммерческий проект, состоящий из 4 сайтов: 2 лендинга и 2 верстки под дальнейшее внедрения во фреймворк 
+<br />
+([Titimiti](https://github.com/Ankrait/Titimiti), [TitimitiShop](https://github.com/Ankrait/TitimitiShop), [titiland](https://github.com/Ankrait/titiland)).
+<hr />
+<a href="https://ankrait.github.io/ZoomLoupe/">Ссылка на GitHub Pages</a>
 <br />
 <br />
 
