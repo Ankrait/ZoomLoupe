@@ -1,10 +1,14 @@
 ////////////////////// Шрифт //////////////////////
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap');
+
 @font-face {
    font-family: "Inter";
    font-style: normal;
    font-weight: 400;
    font-display: swap;
-   src: url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff");
+   src:
+      url("../fonts/Inter-Light.woff2") format("woff2"),
+      url("../fonts/Inter-Light.woff") format("woff");
 }
 
 @font-face {
@@ -12,7 +16,9 @@
    font-style: normal;
    font-weight: 500;
    font-display: swap;
-   src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+   src:
+      url("../fonts/Inter-Regular.woff2") format("woff2"),
+      url("../fonts/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -20,7 +26,9 @@
    font-style: normal;
    font-weight: 600;
    font-display: swap;
-   src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+   src:
+      url("../fonts/Inter-Medium.woff2") format("woff2"),
+      url("../fonts/Inter-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -28,7 +36,9 @@
    font-style: normal;
    font-weight: 700;
    font-display: swap;
-   src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
+   src:
+      url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+      url("../fonts/Inter-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -36,7 +46,9 @@
    font-style: normal;
    font-weight: 800;
    font-display: swap;
-   src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+   src:
+      url("../fonts/Inter-Bold.woff2") format("woff2"),
+      url("../fonts/Inter-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -44,7 +56,9 @@
    font-style: normal;
    font-weight: 900;
    font-display: swap;
-   src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
+   src:
+      url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+      url("../fonts/Inter-ExtraBold.woff") format("woff");
 }
 ////////////////////// Шрифт //////////////////////
 ///
@@ -157,10 +171,10 @@ p {
    max-width: 1450px;
    padding: 0 25px;
    margin: 0 auto;
-   @media screen and (max-width: 767.89px) {
+   @media screen and (max-width: 768px) {
       max-width: 770px;
    }
-   @media screen and (max-width: 424.89px) {
+   @media screen and (max-width: 425px) {
       padding: 0 15px;
    }
 }
@@ -191,7 +205,9 @@ body.overflow--hide {
    padding: 13px 60px;
 
    background: linear-gradient(96.12deg, #00cf8c 7.03%, #008ed7 114.13%);
-   box-shadow: inset 0px 0px 0 0 #008ed7, 0px 0px 10px #00b8a5;
+   box-shadow:
+      inset 0px 0px 0 0 #008ed7,
+      0px 0px 10px #00b8a5;
    border-radius: 100px;
 
    font-weight: 600;
@@ -201,20 +217,24 @@ body.overflow--hide {
    transition: box-shadow 0.7s ease;
 
    &:hover {
-      box-shadow: inset 0px 0px 80px -30px #008ed7, 0px 0px 10px #00b8a5;
+      box-shadow:
+         inset 0px 0px 80px -30px #008ed7,
+         0px 0px 10px #00b8a5;
    }
 
-   @media screen and (max-width: 767.89px) {
+   @media screen and (max-width: 768px) {
       &:hover {
          box-shadow: none;
       }
       &:active {
          transition: box-shadow 0.2s ease;
-         box-shadow: inset 0px 0px 80px -30px #008ed7, 0px 0px 10px #00b8a5;
+         box-shadow:
+            inset 0px 0px 80px -30px #008ed7,
+            0px 0px 10px #00b8a5;
       }
    }
 
-   @media screen and(max-width:600px) {
+   @media screen and (max-width: 600px) {
       max-width: 343px;
       width: 100%;
       &.popup__close-btn {
@@ -233,7 +253,7 @@ body.overflow--hide {
    -webkit-text-fill-color: transparent;
    background-clip: text;
    text-fill-color: transparent;
-   @media screen and(max-width: 767.89px) {
+   @media screen and (max-width: 768px) {
       font-size: 35px;
       line-height: 110%;
    }
@@ -452,7 +472,9 @@ body.overflow--hide {
    display: flex;
    align-items: center;
 
-   transition: transform 0.8s ease-in-out 0.1s, opacity 0.8s ease-in-out 0.1s;
+   transition:
+      transform 0.8s ease-in-out 0.1s,
+      opacity 0.8s ease-in-out 0.1s;
 
    background: rgba(4, 7, 24, 0.9);
    border: 1px solid #3dffc1;
@@ -503,7 +525,7 @@ body.overflow--hide {
    transform: translate(0, 140%);
 }
 
-@media screen and (max-width: 767.89px) {
+@media screen and (max-width: 768px) {
    .cookie {
       width: 80vw;
       padding: 20px 10px;
@@ -603,7 +625,7 @@ body.overflow--hide {
    }
 }
 
-@media screen and (max-width: 424.89px) {
+@media screen and (max-width: 425px) {
    .preloader {
       & img,
       & svg,

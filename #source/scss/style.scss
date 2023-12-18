@@ -1,47 +1,63 @@
-@import "_nullStyle";
-@import "_header-footer";
+@import "nullStyle";
+@import "header-footer";
 
 .main {
    flex: 1 1 100%;
 }
 
 .mainpage {
-   margin: 125px 0 0 0;
+   padding: 100px 0 80px;
+   height: max(100vh, 700px);
+   position: relative;
+
+   &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
 
    &__container {
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+
       position: relative;
       z-index: 1;
    }
 
    &__image {
-      margin: -85px 0 -50px 0;
-      max-width: 660px;
+      max-width: 215px;
+      width: 100%;
 
       img {
          width: 100%;
+         object-fit: contain;
       }
    }
 
    &__title {
+      margin: 50px 0 0 0;
+      font-family: "Exo 2";
+      font-size: 124px;
+      font-style: normal;
       font-weight: 900;
-      font-size: 150px;
-      line-height: 182px;
+      line-height: 93.396%;
+
+      background: linear-gradient(180deg, #fff 0%, #aba8a8 100%);
+      background-clip: text;
 
       white-space: nowrap;
-   }
-
-   &__info {
-      margin: 10px 0 0 0;
-      max-width: 665px;
-
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 130%;
-
-      text-align: center;
    }
 
    &__btn {
@@ -69,6 +85,7 @@
    }
 
    & ._main {
+      display: none;
       position: absolute;
       transform: translate(-50%, -42%);
       top: 0;
@@ -142,7 +159,7 @@
             top: 9px;
             left: 0px;
             border-radius: 50%;
-            background:  #5FA8FF;;
+            background: #5fa8ff;
          }
       }
    }
@@ -241,7 +258,9 @@
    &__block {
       overflow: hidden;
       padding: 80px 0;
-      background: linear-gradient(0deg, rgba(1, 5, 12, 0.8), rgba(1, 5, 12, 0.8)), url("../img/bg_street.png") no-repeat;
+      background:
+         linear-gradient(0deg, rgba(1, 5, 12, 0.8), rgba(1, 5, 12, 0.8)),
+         url("../img/bg_street.png") no-repeat;
       background-size: cover;
       border: 1px solid #5fa8ff;
       box-shadow: 0px 0px 10px rgba(95, 168, 255, 0.3);
@@ -406,7 +425,8 @@
    &__block {
       padding: 80px 0;
       display: flex;
-      background: linear-gradient(
+      background:
+         linear-gradient(
             94.01deg,
             rgba(0, 0, 0, 0.774) 0.48%,
             rgba(0, 0, 0, 0.684) 44%,
@@ -532,7 +552,7 @@
       margin-top: 50px;
    }
 }
-@import "_myswiper";
+@import "myswiper";
 
 .awards {
    margin: 200px 0 0 0;
@@ -803,7 +823,7 @@
       &:hover {
          color: #3dffc1;
       }
-      @media screen and (max-width: 767.89px) {
+      @media screen and (max-width: 768px) {
          &:hover {
             color: #fcfcfc;
          }
@@ -1266,7 +1286,7 @@
    }
 }
 
-@media screen and (max-width: 1023.89px) {
+@media screen and (max-width: 1024px) {
    .mainpage {
       margin: 85px 0 0 0;
       &__container {
@@ -1283,11 +1303,6 @@
       &__title {
          font-size: 80px;
          line-height: 97px;
-      }
-
-      &__info {
-         margin: 5px 0 0 0;
-         font-size: 14px;
       }
 
       &__btn {
@@ -1465,7 +1480,7 @@
    }
 }
 
-@media screen and (max-width: 767.89px) {
+@media screen and (max-width: 768px) {
    .about {
       &__item {
          font-size: 14px;
@@ -1736,7 +1751,8 @@
    .email {
       &__block {
          padding: 60px 15px;
-         background: linear-gradient(0deg, rgba(1, 5, 12, 0.8), rgba(1, 5, 12, 0.8)),
+         background:
+            linear-gradient(0deg, rgba(1, 5, 12, 0.8), rgba(1, 5, 12, 0.8)),
             url(../img/bg_street.png) no-repeat;
          background-size: cover;
          background-position-x: 40%;
@@ -1855,7 +1871,7 @@
    }
 }
 
-@media screen and (max-width: 424.89px) {
+@media screen and (max-width: 425px) {
    .information {
       &__item {
          padding: 0 0 0 10px;
@@ -1863,13 +1879,9 @@
    }
 }
 
-@media screen and (max-width: 374.89px) {
+@media screen and (max-width: 375px) {
    .mainpage {
       margin: 60px 0 0 0;
-      &__info {
-         margin: 0;
-         font-size: 12px;
-      }
 
       &__btn {
          &._1,
@@ -1910,4 +1922,4 @@
    }
 }
 
-@import "_animation";
+@import "animation";
