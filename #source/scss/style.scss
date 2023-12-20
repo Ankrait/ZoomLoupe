@@ -6,8 +6,8 @@
 }
 
 .mainpage {
-   padding: 100px 0 80px;
-   height: max(100vh, 700px);
+   padding: 140px 0 40px;
+   height: max(100vh, 750px);
    position: relative;
 
    &__bg {
@@ -36,6 +36,14 @@
       z-index: 1;
    }
 
+   &__content {
+      flex: 0 1 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+   }
+
    &__image {
       max-width: 215px;
       width: 100%;
@@ -60,27 +68,19 @@
       white-space: nowrap;
    }
 
-   &__btn {
-      box-shadow: none;
-      width: 346px;
-      &._1 {
-         margin-top: 73px;
-         &:hover {
-            box-shadow: inset -100px -20px 80px -30px #008ed7;
-         }
-      }
-      &._2 {
-         margin: 16px 0 0 0;
-         padding: 13px 128.5px;
+   &__buttons {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+   }
 
-         border: 1px solid #fcfcfc;
-         background: transparent;
-         color: #fcfcfc;
-         &:hover {
-            border-color: #2de5e5;
-            box-shadow: inset 0 0 1px 1px #2de5e5;
-            // color: #2de5e5;
-         }
+   &__btn {
+      background: transparent;
+      transition: transform 0.3s ease;
+
+      &:hover {
+         transform: scale(1.1);
       }
    }
 
@@ -99,69 +99,6 @@
    margin: 200px 0 0 0;
    &__container {
       display: flex;
-   }
-
-   &__item {
-      flex: 0 0 50%;
-      display: flex;
-
-      transform: translateX(-40%);
-      opacity: 0;
-
-      &:last-child {
-         justify-content: center;
-         transform: translateX(40%);
-      }
-   }
-
-   &__content {
-      width: 86%;
-   }
-
-   &__title {
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 36px;
-   }
-
-   &__line {
-      margin: 20px 0;
-      height: 1px;
-      width: 50px;
-
-      border-radius: 5px;
-
-      border: 1px solid #5fa8ff;
-      background-color: #5fa8ff;
-      box-shadow: 0px 0px 10px rgba(95, 168, 255, 0.3);
-   }
-
-   &__info {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 130%;
-
-      & span {
-         display: inline-block;
-         font-size: 14px;
-         line-height: 130%;
-         margin: 20px 0 0 0;
-      }
-
-      &.points p {
-         padding-left: 14px;
-         position: relative;
-         &::before {
-            position: absolute;
-            content: "";
-            width: 6px;
-            height: 6px;
-            top: 9px;
-            left: 0px;
-            border-radius: 50%;
-            background: #5fa8ff;
-         }
-      }
    }
 }
 
@@ -1288,30 +1225,23 @@
 
 @media screen and (max-width: 1024px) {
    .mainpage {
-      margin: 85px 0 0 0;
-      &__container {
-      }
+      height: min(700px, max(100vh, 500px));
 
       &__image {
-         margin: -50px 0 -5% 0;
-         max-width: 500px;
-         & img {
-            width: 100%;
-         }
+         max-width: 150px;
       }
 
       &__title {
-         font-size: 80px;
-         line-height: 97px;
+         margin: 30px 0 0 0;
+         font-size: 76px;
       }
 
-      &__btn {
-         &._1 {
-            margin: 30px 0 0 0;
-         }
-         &._2 {
-            margin: 15px 0 0 0;
-         }
+      &__bg {
+         display: none;
+      }
+
+      ._main {
+         display: block;
       }
    }
 
@@ -1724,18 +1654,11 @@
          font-size: 14vw;
          line-height: 17vw;
       }
-      & .blurs {
-         & ._1 {
-            width: 155%;
-            top: 0;
-            left: 0;
-            transform: translate(0);
-         }
-         & ._2 {
+
+      &__btn {
+         img {
             width: 100%;
-            top: -30%;
-            left: 0;
-            transform: translate(0);
+            object-fit: contain;
          }
       }
    }
@@ -1880,20 +1803,6 @@
 }
 
 @media screen and (max-width: 375px) {
-   .mainpage {
-      margin: 60px 0 0 0;
-
-      &__btn {
-         &._1,
-         &._2 {
-            width: 100%;
-            padding: 10px 0;
-         }
-         & img {
-            display: none;
-         }
-      }
-   }
    .steps {
       margin: 150px 0 0 0;
       &__item {
