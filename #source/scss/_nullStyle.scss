@@ -160,7 +160,11 @@ h6 {
    font-weight: inherit;
 }
 p {
-   margin-top: 10px;
+   margin-top: 20px;
+
+   &:first-child {
+      margin-top: 0;
+   }
 }
 ////////////////////// Обнуление //////////////////////
 ///
