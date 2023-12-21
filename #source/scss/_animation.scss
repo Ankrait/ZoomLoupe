@@ -1,45 +1,7 @@
 .about__item._anim-active,
-.miticoin__title._anim-active,
-.phone__title._anim-active,
-.picklocks__title._anim-active,
-.awards__name._anim-active,
-.equipments__title._anim-active,
-.helpus__title._anim-active,
-.helpus__txt._anim-active,
 .form._anim-active {
     transform: translateX(0);
     opacity: 1;
     transition: transform 1.2s ease 0.1s, opacity 1.2s ease 0.4s;
 }
 
-.img-phone-down._anim-active {
-    transition: all 1.2s ease 0.1s;
-    transform: translate(-50%, 66%);
-    opacity: 1;
-}
-.phone__image--block._anim-active .img-phone-bg {
-    transition: transform 1.2s ease 0.1s, opacity 1.2s ease 0.4s;
-    transform: translate(-52%, 0) scale(1);
-    opacity: 1;
-}
-
-.awards .bg._1._anim-active {
-    transform: translate(24%, -25%) matrix(1, 0, 0, -1, 0, 0);
-    transition: transform 1.2s ease 0.1s, opacity 1.2s ease 0.4s;
-    opacity: 1;
-}
-.awards .bg._anim-active._2 {
-    transform: translate(-36%, 34%);
-    transition: transform 1.2s ease 0.1s, opacity 1.2s ease 0.4s;
-    opacity: 1;
-}
-
-.helpus._anim-active .bg {
-    transform: scale(1);
-    transition: transform 1.2s ease 0.1s, opacity 1.2s ease 0.4s;
-    opacity: 1;
-
-    &._1 {
-        transform: translateY(-52%) scale(1);
-    }
-}
