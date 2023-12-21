@@ -1,5 +1,5 @@
 ////////////////////// Шрифт //////////////////////
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Montserrat:wght@400;500display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Montserrat:wght@400;500;600&display=swap');
 
 @font-face {
    font-family: "Inter";
@@ -451,20 +451,6 @@ body.overflow--hide {
    }
 }
 
-.email-accept {
-   & p {
-      text-align: center;
-      line-height: 140%;
-   }
-
-   img {
-      margin: 40px 0 0 0;
-   }
-
-   & .btn {
-      margin-top: 32px;
-   }
-}
 .cookie {
    padding: 20px;
 
@@ -601,13 +587,6 @@ body.overflow--hide {
             left: 78%;
          }
          // display: none;
-      }
-   }
-
-   .email-accept {
-      & img {
-         margin: 8vw 0 4vw 0;
-         width: 30vw;
       }
    }
 }
