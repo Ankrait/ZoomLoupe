@@ -18,47 +18,6 @@ $('.equipments__menu--item').click(function () {
 ///
 ///
 ///
-////////////////////// Свайпер ////////////////////////
-new Swiper('.picklocks .swiper', {
-	navigation: {
-		nextEl: '.picklocks .swiper__arr-right',
-		prevEl: '.picklocks .swiper__arr-left',
-	},
-
-	freeMode: false,
-	loop: true,
-	allowTouchMove: true,
-
-	autoplay: true,
-	breakpoints: {
-		768: {
-			speed: 1000,
-		},
-	},
-});
-
-new Swiper('.awards .swiper', {
-	pagination: {
-		el: '.awards .swiper-pagination',
-		clickable: true,
-	},
-
-	loop: false,
-	freeMode: false,
-	allowTouchMove: true,
-
-	autoplay: false,
-	breakpoints: {
-		768: {
-			speed: 1000,
-		},
-	},
-	spaceBetween: 20,
-});
-//////////////////////// Свайпер ////////////////////////
-///
-///
-///
 //////////////////////// Бургер ////////////////////////
 let toggle = document.querySelector('.burger');
 let header = document.querySelector('.header');
@@ -70,34 +29,6 @@ toggle.addEventListener('click', function (e) {
 	body.classList.toggle('overflow--hide');
 });
 //////////////////////// Бургер ////////////////////////
-///
-///
-///
-//////////////////////// Перетащить блок ////////////////////////
-window.addEventListener('resize', btnRemove);
-function btnRemove() {
-	if (window.matchMedia('screen and (max-width: 600px)').matches)
-		$('.picklocks__btn').appendTo('.picklocks__container');
-	else $('.picklocks__btn').appendTo('.picklocks__content');
-}
-btnRemove();
-
-window.addEventListener('resize', btnRemove2);
-function btnRemove2() {
-	if (window.matchMedia('screen and (max-width: 600px)').matches)
-		$('.miticoin__btn').appendTo('.miticoin__container');
-	else $('.miticoin__btn').appendTo('.miticoin__content');
-}
-btnRemove2();
-
-window.addEventListener('resize', btnRemove3);
-function btnRemove3() {
-	if (window.matchMedia('screen and (max-width: 600px)').matches)
-		$('.phone__content').prependTo('.phone__container');
-	else $('.phone__content').prependTo('.phone__block');
-}
-btnRemove3();
-//////////////////////// Перетащить блок ////////////////////////
 ///
 ///
 ///
@@ -160,37 +91,6 @@ logo.addEventListener('click', () => {
 	);
 });
 ///////////////////// Тык по логу = скролл на верх сайта /////////////////////
-///
-///
-///
-///////////////////// Тык по меню скролл /////////////////////
-/*
-const menu_tocenomic = document.querySelector('.scroll_tocenomic');
-const menu_whitepaper = document.querySelector('.scroll_whitepaper');
-const menu_roadmap = document.querySelector('.scroll_roadmap');
-const menu_titiland = document.querySelector('.scroll_titiland');
-const menu_zoomloop = document.querySelector('.scroll_zoomloop');
-const menu_miticoin = document.querySelector('.scroll_miticoin');
-
-const onMenuClick = (blockName, offset) => {
-    let scroll_to = $(blockName).offset().top + offset;
-    if ($('html, body').is(':animated'))
-        return;
-    if (window.scrollY == Math.floor(scroll_to))
-        return;
-
-    $('html, body').animate({
-        scrollTop: scroll_to
-    }, 1000);
-    removeMenuOpened();
-}
-menu_tocenomic.addEventListener('click', () => onMenuClick('.tocenomics', -200));
-menu_roadmap.addEventListener('click', () => onMenuClick('.roadmap', -220));
-menu_titiland.addEventListener('click', () => onMenuClick('.titiland', -100));
-menu_zoomloop.addEventListener('click', () => onMenuClick('.zoomloop', -180));
-menu_miticoin.addEventListener('click', () => onMenuClick('.miticoin', -170));
-*/
-///////////////////// Тык по меню скролл /////////////////////
 ///
 ///
 ///
@@ -275,7 +175,7 @@ const cookiewin = document.querySelector('.cookie');
 cookie_btn.addEventListener('click', (e) => {
 	cookiewin.classList.add('cookie--hide');
 });
-// функция возвращает cookie с именем name, если есть, если нет, то undefined
+
 function getCookie(name) {
 	let matches = document.cookie.match(
 		new RegExp(
@@ -287,10 +187,8 @@ function getCookie(name) {
 
 let cookiecook = getCookie('cookiecook');
 
-// проверяем, есть ли у нас cookie, с которой мы не показываем окно и если нет, запускаем показ
 if (cookiecook != 'no' || cookiecook == null) {
 	cookiewin.classList.remove('cookie--hide');
-	// показываем
 
 	let date = new Date();
 	date.setDate(date.getDate() + 1);

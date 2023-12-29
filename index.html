@@ -57,37 +57,33 @@
 						<img src="img/mainpage/bg.png" alt="bg" />
 					</div>
 					<div class="mainpage__container">
-						<img class="blur _main" src="img/mainpage_blurs/EllipseMain.svg" alt="Блюр" />
+						<img class="blur _main" src="img/blur/mainpage.svg" alt="blur" />
 						<div class="mainpage__content">
 							<div class="mainpage__image">
 								<img src="img/logo.svg" alt="Логотип" />
 							</div>
 							<div class="mainpage__title">ZOOM LOUPE</div>
 						</div>
-						<div class="mainpage__buttons">
-							<button class="mainpage__btn er_404">
-								<img src="img/mainpage/google_play.svg" alt="Google Play" />
-							</button>
-							<button class="mainpage__btn er_404">
-								<img src="img/mainpage/app_store.svg" alt="App Store" />
-							</button>
+						<div class="mainpage__bottom">
+							<div class="mainpage__buttons">
+								<div class="mainpage__soon">Coming soon</div>
+								<button class="mainpage__btn er_404">
+									<img src="img/mainpage/google_play.svg" alt="Google Play" />
+								</button>
+								<button class="mainpage__btn er_404">
+									<img src="img/mainpage/app_store.svg" alt="App Store" />
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="about">
 					<div class="about__container">
-						<div>
-							<p class="about__text">
-								Уникальная метавселенная в метасети TITI MITI обьединяющая игроков по
-								всему миру для поиска сокровищ, общения и коммуникации.
-							</p>
-							<p class="about__text">
-								Находи сундуки на карте, открывай их при помощи разнообразных игровых
-								предметтов (GNFT) и получай реальную награду.
-							</p>
+						<div class="about__text">
+							Do you love money? We love money too... And we will drop them on the streets
+							for you!
 						</div>
-						<button class="about__button">Discord</button>
 					</div>
 				</div>
 
@@ -98,9 +94,11 @@
 								<div class="ability__image">
 									<img src="img/ability/_1.svg" alt="ability 1" />
 								</div>
-								<div class="ability__title">Играй с друзьями</div>
-								<div class="ability__text">
-									Место, где ты можешь играть вместе со своими друзьями
+								<div data-lang="ability_name_1" class="ability__title">
+									Play with friends
+								</div>
+								<div data-lang="ability_text_1" class="ability__text">
+									A place where you can play with your friends
 								</div>
 							</div>
 
@@ -108,9 +106,11 @@
 								<div class="ability__image">
 									<img src="img/ability/_2.svg" alt="ability 2" />
 								</div>
-								<div class="ability__title">Выполняй квесты</div>
-								<div class="ability__text">
-									Проходи захватывающие квесты по всему городу
+								<div data-lang="ability_name_2" class="ability__title">
+									Complete quests
+								</div>
+								<div data-lang="ability_text_2" class="ability__text">
+									Complete exciting quests throughout the city
 								</div>
 							</div>
 
@@ -118,11 +118,14 @@
 								<div class="ability__image">
 									<img src="img/ability/_3.svg" alt="ability 3" />
 								</div>
-								<div class="ability__title">Получай награды</div>
-								<div class="ability__text">
-									Получай за это ценные награды и обменивай их на деньги
+								<div data-lang="ability_name_3" class="ability__title">Get rewards</div>
+								<div data-lang="ability_text_3" class="ability__text">
+									Get valuable rewards for this and exchange them for money
 								</div>
 							</div>
+						</div>
+						<div class="ability__blur">
+							<img src="img/blur/ability.svg" alt="blur">
 						</div>
 					</div>
 				</div>
@@ -137,17 +140,18 @@
 					<div class="zoomloupe__container">
 						<div class="zoomloupe__image">
 							<img src="img/zoomloupe.png" alt="zoomloupe" />
+							<img class="blur" src="img/blur/zoomloupe.svg" alt="blur">
 						</div>
 						<div class="zoomloupe__content">
 							<div class="zoomloupe__title">ZOOM LOUPE</div>
 							<div class="zoomloupe__text">
-								<p>
-									Уникальная метавселенная в метасети TITI MITI обьединяющая игроков по
-									всему миру для поиска сокровищ, общения и коммуникации.
+								<p data-lang="zoomloupe_1">
+									A unique metaverse within the TITI MITI metanetwork, bringing players
+									worldwide together for treasure hunting, communication, and interaction.
 								</p>
-								<p>
-									Находи сундуки на карте, открывай их при помощи разнообразных игровых
-									предметтов (GNFT) и получай реальную награду.
+								<p data-lang="zoomloupe_2">
+									Find chests on the map, open them using various gaming items, and
+									receive real rewards.
 								</p>
 							</div>
 						</div>
@@ -161,14 +165,14 @@
 
 					<div class="reality__container">
 						<div class="reality__content">
-							<p>
-								Загляни в окно дополненной реальности Zoom Loupe и попади в альтернативный
-								игровой мир где любой человек может найти настоящие ценности, просто
-								разбросанные вокруг.
+							<p data-lang="reality_1">
+								Look through the Zoom Loupe augmented reality window and enter an
+								alternative gaming world where anyone can find real treasure scattered
+								around.
 							</p>
-							<p>
-								Собери полный комплект снаряжения максимального уровня (GNFT) и открой
-								легендарный сундук с впечатляющими сокровищами внутри.
+							<p data-lang="reality_2">
+								Collect a full set of top-level gear and open the legendary chest with
+								impressive valuables inside.
 							</p>
 						</div>
 						<div class="reality__image">
@@ -177,7 +181,7 @@
 					</div>
 				</div>
 
-				<div class="inventory">
+				<!-- <div class="inventory">
 					<div class="inventory__container">
 						<div class="inventory__content">
 							<div class="inventory__chest chest-inventory">
@@ -230,10 +234,12 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<div class="prize">
-					<div class="prize__title">ЧТО МОЖНО НАЙТИ В СУНДУКАХ ZOOM LOUPE</div>
+					<div data-lang="prize" class="prize__title">
+						WHAT CAN BE FOUND IN ZOOM LOUPE CHESTS?
+					</div>
 
 					<div class="prize__list">
 						<div class="prize__item">
