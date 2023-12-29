@@ -1056,6 +1056,14 @@ input.error:focus {
     width: 100%;
   }
 }
+.blur {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
@@ -1221,7 +1229,7 @@ input.error:focus {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  max-width: 550px;
+  max-width: 580px;
   margin: 0 auto;
 }
 
@@ -1298,11 +1306,15 @@ input.error:focus {
 
 .video {
   margin: 100px 0 0 0;
+  aspect-ratio: 16/7;
 }
-.video img {
+.video__container {
+  height: 100%;
+}
+.video iframe {
+  padding: 20px 0;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 100%;
 }
 
 .zoomloupe {

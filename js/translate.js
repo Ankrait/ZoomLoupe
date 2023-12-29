@@ -1,4 +1,9 @@
 const translate = {
+	about: {
+		ru: 'Любишь денежки? Мы тоже очень любим денежки...<br/> И просто оставили их для тебя на улице!',
+		en: 'Do you love money? We love money too...<br/> And we will drop them on the streets for you!',
+	},
+
 	ability_name_1: {
 		ru: 'Играй с друзьями',
 		en: 'Play with friends',
